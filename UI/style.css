@@ -1054,11 +1054,9 @@ border-radius: 5px;
     background: #fff;
 border-radius: 5px;
 }
-/* .displayboard{
-    width: 100px;
-    height: 100px;
-    background: #fff;
-} */
+
+
+
 /* Media Query */
 @media(max-width: 999px){
     .formsignup{
