@@ -1,0 +1,1241 @@
+body{
+    font: 15px/1.5 'Montserrat', sans-serif 'Thasadith', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #ddd;
+    
+    
+}
+
+
+/* Global */
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container2{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+.container3{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+   margin-top: 20px;
+}
+.container4{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1%;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="button"]{
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-align: center;
+    background: #f26522;
+    color: #fff;
+    border: none;
+    padding: 5px;
+
+}
+input[type="button"]:hover{
+    background:#f7931e;
+    color: #fff;
+}
+h1,h2,h3,h4,h5,p{
+    padding: 3px;
+    margin: 0;
+    font-family: 'Thasadith', sans-serif;
+
+}
+h3{
+    font-size: 18px;
+    line-height: 22px;
+    min-height: 10px;
+    font-weight: 500;
+    font-family:'Thasadith', sans-serif;
+
+}
+h4{
+    font-size: 15px;
+    line-height: 22px;
+    min-height: 10px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-size: 13px;
+    line-height: 22px;
+    min-height: 10px;
+    font-weight: 500;
+    font-family: 'Thasadith', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: #5a596a;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    font-family: 'Thasadith', sans-serif;
+
+}
+
+nav{
+    background:  #f26522;
+    min-height: 50px;
+    padding: 10px;
+    color: #fff;
+}
+.hightlight{
+    cursor: pointer;
+    color:  #fff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.display{
+    background: #fff;
+    min-height: 30px;
+    padding: 10px;
+}
+
+
+
+/* index.html */
+#headnav{
+    width: 90%;
+    margin: auto;
+    overflow: hidden; 
+}
+#headnav img{
+    float: left;
+    cursor: pointer;
+    color:  #f26522;
+    margin-top: 10px;
+    width: 60px;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+#headnav h1{
+    float: left;
+    cursor: pointer;
+    color:  #f26522;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Thasadith', sans-serif;
+
+}
+#headnav ul{
+    float: right;
+    margin-top: 30px;
+  
+    margin-bottom: 20px;
+    
+}
+#headnav li{
+    display: inline;
+    margin: 20px;
+}
+#headnav li:hover{
+
+}
+#headnav li a:hover{
+    color: #f7931e;
+}
+#headnav li a{
+    color:  #f26522;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+#headnavbutton{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#headnavbutton button{
+    margin-right: 20px;
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid  #f26522;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    background:  #f26522;
+    color:  #fff;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+#headnavbutton button:hover{
+    background: #f7931e;
+    color: #fff;
+}
+
+/*  */
+header{
+    color: #fff;
+    min-height: 80vh;
+    background-image:linear-gradient(rgba(0, 17, 26, 0.6), rgba(10, 57, 63, 0.6)),  url(./image/use1.jpg);
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom: 6px solid #f26522;
+    
+}
+.headercontentborder{
+    border: 1px solid #f7931e;
+    margin-top: 100px;
+    padding: 50px 50px;
+    border-radius: 5px;
+}
+
+.headercontent{
+    text-align: center;
+   
+
+}
+.headercontentbtn{
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.headercontent h1{
+   
+    color:#f26522;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    line-height: 82px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.headercontent h3{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: #f26522;
+    margin-bottom: 15px;
+}
+.headercontentbtn button{
+    margin-right: 20px;
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid  #f26522;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    background:  #f26522;
+    color:  #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+.headercontentbtn button:hover{
+    color: #fff;
+    background: #f7931e;
+}
+.divcaption{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.divcaption h1{
+    color:  #f26522;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Thasadith', sans-serif;
+
+}
+
+#boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    
+    justify-content: center;
+}
+.boximg{
+    background:#fff;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    min-height: 70px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    padding:10px;
+}
+.boximg h2{
+    color:  #f26522;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Thasadith', sans-serif;
+
+}
+.boximg p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Thasadith', sans-serif;
+
+    color: #5a596a;
+}
+
+.boximg:hover{
+    box-shadow: 5px 5px 5px #f26522;
+}
+.boximg img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    
+}
+.gotquestion{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.gotquestion h1{
+    color:  #f26522;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Thasadith', sans-serif;
+
+    margin-bottom: 20px;
+}
+.gotquestionimg{
+    text-align: center;
+    padding: 20px;
+}
+.gotquestionimg img{
+    padding: 0px 50px 50px 50px;
+}
+
+.gotquestionimg img:hover{
+    box-shadow: 5px 5px 5px #f7931e;
+}
+.frontdisplay{
+    min-height: 150px;
+    background: #f26522;
+    background-position: fixed;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.frontdisplay h3{
+    margin-top: 30px;
+    color:  #fff;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 30px;
+    font-family: 'Thasadith', sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.frontdisplay button{
+    min-height: 50px;
+    border: 2px solid #fff;
+
+    margin-right: 20px;
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+    width: 300px;
+    
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    background:  #f26522;
+    color:  #fff;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.frontdisplay button:hover{
+    background: #f7931e;
+}
+
+footer{
+    padding: 20px;
+    border-top: 1px solid #f26522;
+}
+.footercont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  
+}
+
+.foota li{
+    list-style: none;
+    margin: 5px;
+    
+}
+
+.foota li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:'Thasadith', sans-serif;
+
+    color:#5a596a;
+}
+.foota h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+
+    color:#f26522;
+}
+
+.foota li a:hover{
+    color: #f7931e;
+}
+
+/* signup.html */
+.bbb{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(./image/use2.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center center;
+}
+.bbb2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(./image/use4.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center center;
+}
+
+form h3{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 100;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #f26522; 
+}
+.formsignup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    margin: 50px auto;
+}
+.divsignup2{
+    padding: 20px;
+    background: #f7931e;
+    color: #fff;
+    margin-top: 50px;
+    align-self: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+}
+.divsignup2 h3{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #fff; 
+}
+
+.signup{
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+    justify-self: start;
+}
+form{
+    background: #ddd;
+    padding: 20px;
+    border-radius:5px; 
+    text-align: center;
+}
+   
+.formlabel{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #f26522;
+    padding: 10px;
+    
+}
+.formlabelname{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #f26522;
+    padding: 10px;
+    margin-left: 250px;
+}
+.forminput{
+    min-width: 405px;
+    min-height: 25px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #5a596a;
+    border-radius: 5px;
+    border: none;
+}
+.forminputname{
+    min-width: 190px;
+    min-height: 25px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #5a596a;
+    border-radius: 5px;
+    border: none;
+}
+.formsubmit{
+    padding: 5px;
+    min-width: 415px;
+    min-height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0;
+}
+.formalt{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.altsignin{
+    color: #f26522;
+}
+.altsignin:hover{
+    color: #f7931e;
+}
+
+
+
+/* login.html */
+
+.spanspec{
+    color: #5a596a;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Thasadith', sans-serif;
+
+}
+.logindiv{
+    margin: 0 auto;
+    display: grid;
+    width: 50%;
+}
+.upvotecount, .downvotecount{
+    margin: 5px;
+}
+/* meetup */
+.currentmeetups{
+    display: block;
+    /* grid-template-columns: 2fr 1fr;
+    grid-gap: 10px; */
+}
+.usercard{
+   float: right;
+   width: 30%;
+}
+/* meetupquestions and answers div */
+.currentmeetupsQC{
+    float: left;
+    width: 65%;
+    display: grid;
+    
+   
+}
+.currentmeetupsQCdiv{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    margin: 5px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+.askquestions2{
+    margin-top: 5px;
+}
+.askquestionsinput{
+    width: 70%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+.askquestionsinputbtn{
+   border-radius: 5px;
+   padding: 5px;
+   border:none;
+   background-color: #f26522;
+   color: #fff; 
+   margin-left: 3px; 
+}
+.askquestionsinputbtn:hover{
+    background: #f7931e;
+}
+.askquestionsinput2{
+    margin-left: 30px;
+    width: 70%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+.askquestionsinputbtn2{
+    border-radius: 5px;
+    padding: 5px;
+    border:none;
+    background-color: #f26522;
+    color: #fff;  
+    margin-left: 3px;
+ }
+ .askquestionsinputbtn2:hover{
+     background: #f7931e;
+ }
+
+.usercardprofile{
+    padding: 10px;
+    background:#f26522;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.meetupbtn{
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+    border: 1px solid  #f26522;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    background:  #f26522;
+    color:  #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+.meetupbtn:hover{
+    background: #f7931e;
+}
+/* userprofile */
+.userdashboard{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 6fr  4fr;
+    justify-items: center;
+  align-items: center; */
+}
+.profileavatar{
+    flex-basis: 20%;
+}
+.profileavatar h3{
+    display: inline;
+}
+.usermenu{
+    flex-basis: 30%;
+}
+#userdashboardsearch {
+    flex-basis: 40%;
+}
+.userdashbtn{
+    flex-basis: 10%;
+}
+.usermenu li{
+    display: inline;
+    padding: 20px;
+}
+.usermenu li a:hover{
+   color: #f26522;
+}
+#userdashboardsearch input{
+    border: 1px solid  #f26522;
+    border-radius: 5px;
+}
+.usersearchinput{
+    width: 60%;
+    padding: 5px;
+
+}
+#userdashboardsearch {
+    flex-basis: 40%;
+}
+.userdashbtn{
+    flex-basis: 10%;
+}
+.userdashbtn button{
+    
+    font-weight: 400;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid  #f26522;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    background:  #f26522;
+    color:  #fff;
+    height: 40px;
+ 
+}
+.userdashbtn button:hover{
+    background: #f7931e;
+}
+
+.userprofile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-around;
+    
+}
+.questionsasked{
+    flex-basis: 30%;
+}
+.questionscomment{
+    flex-basis: 30%;
+}
+.trendingquestions{
+    flex-basis: 30%;
+}
+/* admin */
+.adimindminlogin{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* adminmainpage */
+.createeventh3 h3{
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #054A91;
+}
+.admineventform{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    align-content: center;
+  justify-content:  center;
+
+}
+
+.admincreate{
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #054A91;
+    padding: 10px;
+    background: #fff;
+}
+
+.admincreate input{
+    width: 150px;
+}
+.fcentre{
+    margin-left: 10px;
+    
+    
+}
+.fcentreb{
+    
+    float: right;
+    margin-right: 20px;
+}
+.adcreateE input{
+    width: 320px;
+    padding: 10px;
+
+}
+
+.admincreate p{
+    
+    margin-top: 10px;
+}
+
+.admincreate input[type="button"]{
+    min-height: 40px;
+    width: 180px;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    background: #054A91;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.admincreate input[type="button"]:hover{
+    color: #fff;
+    background: #3E7CB1;
+}
+
+
+/* adminpage */
+
+.admingridb{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* admindashboard.html */
+aside{
+   
+    width: 20%;
+    float:left;
+    padding: 20px;
+    
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+
+}
+.adminnotif, .yourmeetupsdiv{
+    background-color: #f7931e;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+    border-radius: 5px;
+}
+.adminnotif:hover, .yourmeetupsdiv:hover{
+    background-color: #f26522;
+}
+.adminnotif h1, .yourmeetupsdiv h1{
+    text-align: center;
+    color: #fff;
+}
+
+aside ul{
+    list-style: none;
+    padding: 20px;
+}
+aside li{
+    padding: 20px 0px 20px 0px;
+}
+.far, .fas{
+    padding: 0px 15px 0px 0px;
+}
+aside li a{
+   
+}
+aside li a:hover{
+   color: #f7931e;
+}
+article{
+    width: 70%;
+    float: right;
+    padding: 20px;
+}
+/* admincreate meetup */
+.admincreatemeetup{
+    display: flex;
+    justify-content: center;
+}
+.admincreatemeetupinstruction{
+    flex-basis: 30%;
+    background: #f7931e;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+.admincreatemeetupform{
+    flex-basis: 65%;
+    align-items: flex-start;
+}
+.admincreatemeetupform h3{
+    margin-left: 100px;
+    color: #f7931e;
+    font-size:35px;
+    font-weight: 700px;
+}
+.tyt{
+    text-align: left;
+}
+.meetuplabel{
+    
+    min-height: 25px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #5a596a;
+    border-radius: 5px;
+    border: none;
+}
+.meetupinput{
+    min-width: 60%;
+    min-height: 25px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color: #5a596a;
+    border-radius: 5px;
+    border: none;
+}
+.meetupformsubmit{
+    min-width: 63%;
+    min-height: 25px;
+    border-radius: 5px;
+}
+/* adminmeetups.html */
+.meetmeetup{
+    display: block;
+    
+}
+.yourmeetups{
+float: left;
+width: 60%;
+
+}
+.allmeetups{
+    float: right;
+    width: 35%;
+}
+.meetupdiv{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-gap: 3px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.meetuptime{
+    
+}
+.meetupcontennt{
+    justify-self: start;
+}
+.downvotecount{
+    justify-self: start;
+}
+.deletebox{
+    justify-self: center;
+}
+.deletebox span:hover, .upvotecount i:hover, .downvotecount i:hover{
+color: #f7931e;
+}
+#downvotecount, #upvotecount{
+    margin-right: 10px;
+}
+.allmeetupsdiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px; 
+    margin-bottom: 5px;
+    
+}
+.allmeetupsdivdesc{
+    justify-self: start;
+
+}
+.allmeetupsdivdesc h1{
+    font-size: 20px;
+}
+
+/* editprofile */
+.editprofile{
+display: flex;
+justify-content: center;
+}
+.editprofile{
+flex-basis: 35%;
+justify-content: center;
+}
+.editprofileform{
+    flex-basis: 50%;
+    justify-content: center;
+}
+.editprofilecardavatar{
+    padding: 30px;
+}
+
+
+/* admindashboard */
+.admindashboardinterface{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.meetups{
+    margin: 5px;
+    min-height: 150px;
+flex-basis: 45%;
+justify-content: center;
+background: #fff;
+border-radius: 5px;
+}
+.users{
+    margin: 5px;
+    min-height: 150px;
+    flex-basis: 45%;
+    justify-content: center;
+    background: #fff;
+border-radius: 5px;
+}
+.questions{
+    margin: 5px;
+    min-height: 150px;
+    flex-basis: 45%;
+    justify-content: center;
+    background: #fff;
+border-radius: 5px;
+}
+.comment{
+    margin: 5px;
+    min-height: 150px;
+    flex-basis: 45%;
+    justify-content: center;
+    background: #fff;
+border-radius: 5px;
+}
+/* .displayboard{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+} */
+/* Media Query */
+@media(max-width: 999px){
+    .formsignup{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        margin: 50px auto;
+    }
+    .signup{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    .divsignup2{
+        padding: 20px;
+        background: #f7931e;
+        color: #fff;
+        margin-top: 50px;
+        align-self: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+    }
+    .forminput{
+        width: 100%;
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color: #5a596a;
+        border-radius: 5px;
+        border: none;
+    }
+    .forminputname{
+        width:100%;
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color: #5a596a;
+        border-radius: 5px;
+        border: none;
+    }
+
+}
+@media(max-width: 675px){
+    .formsignup{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        margin: 50px auto;
+    }
+    .signup{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    .divsignup2{
+        padding: 20px;
+        background: #f7931e;
+        color: #fff;
+        margin-top: 50px;
+        align-self: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+    }
+    .forminput{
+        width: 100%;
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color: #5a596a;
+        border-radius: 5px;
+        border: none;
+    }
+    .forminputname{
+        width:100%;
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color: #5a596a;
+        border-radius: 5px;
+        border: none;
+    }
+
+}
+@media(max-width: 768px){
+    #headnav{
+        width: 100%;
+        margin: auto;
+        overflow: hidden; 
+    }
+    #headnav img{
+        display: block;
+        float: left;
+        text-align: center
+    }
+    #headnav h1{
+        text-align: center;
+        display: block;
+        float: right;
+    
+    }
+    #headnav ul{
+        display: none;
+        
+    }
+    #headnavbutton{
+        display: none;
+    }
+    .headercontent{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .headercontent button{
+        margin: 5px;
+    }
+    #boxes{
+        display: block;
+        width: 80%;
+        margin: auto;
+    
+    justify-content: center;
+    }
+    .boximg{
+        
+    }
+    
+
+    .footercont{
+        display: block;
+        text-align: center;
+        justify-items: center;
+      
+    }
+    
+    .foota li{
+        list-style: block;
+        margin: 5px;
+        
+    }
+    /* signup */
+    .signup{
+        display: block;
+    }
+    /* loginbox */
+    .Loginbox{
+        margin-top: 50px;
+        padding: 20px;
+        width: 50%; 
+           
+        margin-left: 0px;
+        margin-right: 0px;
+       
+        background: #fff;
+        box-shadow: 5px 5px 5px #81A4CD;
+        margin-bottom: 10px;
+    }
+}
