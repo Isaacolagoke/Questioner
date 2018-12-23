@@ -7,7 +7,9 @@ body{
     
 }
 
-
+* {
+    box-sizing: border-box;
+  }
 /* Global */
 
 .container{
@@ -194,7 +196,7 @@ nav{
 /*  */
 header{
     color: #fff;
-    min-height: 80vh;
+    min-height: 85vh;
     background-image:linear-gradient(rgba(0, 17, 26, 0.6), rgba(10, 57, 63, 0.6)),  url(./image/use1.jpg);
     background-size: cover;
     padding-top: 20px;
@@ -278,7 +280,7 @@ header{
 #boxes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 15px;
     
     justify-content: center;
 }
@@ -288,7 +290,7 @@ header{
     text-align: center;
     border-radius: 10px;
     min-height: 70px;
-    width: 80%;
+    width: 100%;
     align-self: center;
     justify-self: center;
     padding:10px;
@@ -314,8 +316,8 @@ header{
     box-shadow: 5px 5px 5px #f26522;
 }
 .boximg img{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
     
 }
@@ -426,6 +428,15 @@ footer{
 
 .foota li a:hover{
     color: #f7931e;
+}
+footer span{
+    margin: 5px;
+}
+footer i{
+    color: #5a596a;
+}
+footer i:hover{
+    color: #f26522;
 }
 
 /* signup.html */
@@ -1236,4 +1247,80 @@ border-radius: 5px;
         box-shadow: 5px 5px 5px #81A4CD;
         margin-bottom: 10px;
     }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 97%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .headercontentborder{
+        margin-top: 50px;
+        padding: 25px 25px;
+        border-radius: 5px;
+    }
+    .headercontent{
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+    .headercontent h1{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .headercontentbtn{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .headercontentbtn button{
+        display: block;
+        margin: 10px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .gotquestionimg{
+        text-align: center;
+    }
+    .gotquestionimg img{
+        padding: 30px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .frontdisplay button{
+        width: 100%;
+    }
+    .foota li a{
+        font-size: 20px;
+    }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container{
+        width: 97%;
+        margin: auto;
+        overflow: hidden;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
