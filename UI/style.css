@@ -1329,6 +1329,22 @@ border-radius: 5px;
         margin: 0;
         padding: 0;
     }
+    .container3{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+       margin-top: 20px;
+    }
+    .currentmeetupsQC{
+        width: 95%;
+        display: block; 
+        margin: 10px;
+    }
+    .usercard{
+        display: block;
+        width: 95%;
+        margin: 10px;
+     }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
