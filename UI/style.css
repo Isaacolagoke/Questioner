@@ -442,13 +442,13 @@ footer i:hover{
 /* signup.html */
 .bbb{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(./image/use2.jpg);
-    /* background-repeat: no-repeat; */
+    height: 100vh;
     background-size: cover;
     background-position: center center;
 }
 .bbb2{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(./image/use4.jpg);
-    /* background-repeat: no-repeat; */
+    height: 100vh;
     background-size: cover;
     background-position: center center;
 }
@@ -504,26 +504,8 @@ form{
     text-align: center;
 }
    
-.formlabel{
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 24px;
-    font-family: 'Thasadith', sans-serif;
-    color: #f26522;
-    padding: 10px;
-    
-}
-.formlabelname{
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 24px;
-    font-family: 'Thasadith', sans-serif;
-    color: #f26522;
-    padding: 10px;
-    margin-left: 250px;
-}
 .forminput{
-    min-width: 405px;
+    min-width: 397px;
     min-height: 25px;
     padding: 5px;
     margin: 5px;
@@ -552,7 +534,7 @@ form{
 }
 .formsubmit{
     padding: 5px;
-    min-width: 415px;
+    min-width: 398px;
     min-height: 25px;
     border-radius: 5px;
     border: none;
@@ -583,8 +565,8 @@ form{
 }
 .logindiv{
     margin: 0 auto;
-    display: grid;
-    width: 50%;
+    display: block;
+    width: 500px;
 }
 .upvotecount, .downvotecount{
     margin: 5px;
@@ -1297,8 +1279,72 @@ border-radius: 5px;
     }
     .foota li a{
         font-size: 20px;
+        margin: 0;
     }
 
+    .logindiv{
+        margin: 50px auto;
+        display: block;
+        width: 100%;
+    }
+    .formsignup{
+        display: block;
+        padding: 5px;
+        margin: 50px auto;
+    }
+    .divsignup2{
+        display: block;
+    }
+    .signup{
+        display: block;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    form{
+        display: block;
+        padding: 10px;
+        border-radius:5px; 
+    }
+    form h3{
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-size: 45px;
+        font-weight: 100;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color: #f26522; 
+    }
+    .forminputname{
+        min-width: 97%;
+        min-height: 100%;
+    }
+    .forminput{
+        min-width: 97%;
+        min-height: 100%;
+    }
+    .formsubmit{
+        min-width: 97%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container3{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+       margin-top: 20px;
+    }
+    .currentmeetupsQC{
+        width: 95%;
+        display: block; 
+        margin: 10px;
+    }
+    .usercard{
+        display: block;
+        width: 95%;
+        margin: 10px;
+     }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
