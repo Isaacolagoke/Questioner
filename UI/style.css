@@ -827,13 +827,16 @@ form{
 
 /* admindashboard.html */
 aside{
-   
     width: 20%;
     float:left;
     padding: 20px;
-    
     box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
 
+}
+article{
+    width: 70%;
+    float: right;
+    padding: 20px;
 }
 .adminnotif, .yourmeetupsdiv{
     background-color: #f7931e;
@@ -852,6 +855,7 @@ aside{
 aside ul{
     list-style: none;
     padding: 20px;
+    margin: 
 }
 aside li{
     padding: 20px 0px 20px 0px;
@@ -865,11 +869,7 @@ aside li a{
 aside li a:hover{
    color: #f7931e;
 }
-article{
-    width: 70%;
-    float: right;
-    padding: 20px;
-}
+
 /* admincreate meetup */
 .admincreatemeetup{
     display: flex;
@@ -1345,6 +1345,98 @@ border-radius: 5px;
         width: 95%;
         margin: 10px;
      }
+     .userdashboard{
+        display: block;
+        text-align: center;
+    }
+    .profileavatar{
+        display: block;
+        margin: 10px;
+    }
+    .usermenu{
+        display: block;
+        margin: 10px;
+    }
+    #userdashboardsearch {
+        display: inline-block;
+        margin: 10px;
+        width: 100%;
+    }
+    .userdashbtn{
+        display: none;
+    }
+    .usersearchinput{
+        width: 80%;
+        padding: 5px;
+    }
+    .userprofile{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .questionsasked{
+        margin-top: 10px;
+    }
+    .editprofile{
+        display: block;
+        text-align: center;
+    }
+    .editprofilecard{
+        display: block;
+    }
+    .editprofileform{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tyt{
+        text-align: center;
+    }
+    .forma, .name{
+        width: 100%;
+    }
+    .meetupinput {
+        min-width: 95%;
+    }
+    .meetupformsubmit {
+        min-width: 95%;
+    }
+    .adimindminlogin{
+        margin-top:30px;
+    }
+    aside{
+        display: block;
+        width: 100%;
+    }
+    article{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+   .admindashboardinterface{
+    display: block;
+   }
+   .yourmeetups{
+    display: block;
+    width: 100%;
+   }
+   .allmeetups{
+    display: block;
+    width: 100%;
+   }
+   .admincreatemeetup{
+       display: block;
+       width: 100%;
+   }
+   .admincreatemeetupform{
+    margin: 10px;
+    width: 100%;
+    }
+   .admincreatemeetupform h3{
+       text-align: center;
+       margin: 0 auto;
+   }
+
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
