@@ -1441,24 +1441,205 @@ border-radius: 5px;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    
+    
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
     .container{
         width: 97%;
         margin: auto;
         overflow: hidden;
     }
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+    .container3{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+       margin-top: 20px;
+    }
+    .currentmeetupsQC{
+        width: 95%;
+        display: block; 
+        margin: 10px;
+    }
+    .usercard{
+        display: block;
+        width: 95%;
+        margin: 10px;
+     }
+     .userdashboard{
+        display: block;
+        text-align: center;
+    }
+    .profileavatar{
+        display: block;
+        margin: 10px;
+    }
+    .usermenu{
+        display: block;
+        margin: 10px;
+    }
+    #userdashboardsearch {
+        display: inline-block;
+        margin: 10px;
+        width: 100%;
+    }
+    .userdashbtn{
+        display: none;
+    }
+    .usersearchinput{
+        width: 80%;
+        padding: 5px;
+    }
+    .userprofile{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .questionsasked{
+        margin-top: 10px;
+    }
+    .editprofile{
+        display: block;
+        text-align: center;
+    }
+    .editprofilecard{
+        display: block;
+    }
+    .editprofileform{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tyt{
+        text-align: center;
+    }
+    .forma, .name{
+        width: 100%;
+    }
+    .meetupinput {
+        min-width: 95%;
+    }
+    .meetupformsubmit {
+        min-width: 95%;
+    }
+    .adimindminlogin{
+        margin-top:30px;
+    }
+    aside{
+        display: block;
+        width: 100%;
+    }
+    article{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+   .admindashboardinterface{
+    display: block;
+   }
+   .yourmeetups{
+    display: block;
+    width: 100%;
+   }
+   .allmeetups{
+    display: block;
+    width: 100%;
+   }
+   .admincreatemeetup{
+       display: block;
+       width: 100%;
+   }
+   .admincreatemeetupform{
+    margin: 10px;
+    width: 100%;
+    }
+   .admincreatemeetupform h3{
+       text-align: center;
+       margin: 0 auto;
+   }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+@media only screen and (max-width: 992px) {
+    .userdashboard{
+        display: block;
+        text-align: center;
+    }
+    .profileavatar{
+        display: block;
+        margin: 10px;
+    }
+    .usermenu{
+        display: block;
+        margin: 10px;
+    }
+    #userdashboardsearch {
+        display: inline-block;
+        margin: 10px;
+        width: 100%;
+    }
+    .userdashbtn{
+        display: none;
+    }
+    .usersearchinput{
+        width: 80%;
+        padding: 5px;
+    }
 } 
 
+/*  */
+
+@media only screen and (max-width: 924px) {
+    .userdashboard{
+        display: block;
+        text-align: center;
+    }
+    .profileavatar{
+        display: block;
+        margin: 10px;
+    }
+    .usermenu{
+        display: block;
+        margin: 10px;
+    }
+    #userdashboardsearch {
+        display: inline-block;
+        margin: 10px;
+        width: 100%;
+    }
+    .userdashbtn{
+        display: none;
+    }
+    .usersearchinput{
+        width: 80%;
+        padding: 5px;
+    }
+
+    aside{
+        display: block;
+        width: 100%;
+    }
+    article{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+   .admindashboardinterface{
+    display: block;
+   }
+   .yourmeetups{
+    display: block;
+    width: 100%;
+   }
+   .allmeetups{
+    display: block;
+    width: 100%;
+   }
+   /*  */
+} 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    
 }
