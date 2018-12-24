@@ -1297,7 +1297,9 @@ border-radius: 5px;
     }
     .foota li a{
         font-size: 20px;
+        margin: 0;
     }
+    
 
 } 
 
