@@ -17,7 +17,12 @@ body{
     margin: auto;
     overflow: hidden;
 }
-
+.container1{
+    width: 97%;
+    margin: auto;
+    overflow: hidden;
+    padding: 5px;
+}
 .container2{
     width: 100%;
     margin: auto;
@@ -154,9 +159,7 @@ nav{
     display: inline;
     margin: 20px;
 }
-#headnav li:hover{
 
-}
 #headnav li a:hover{
     color: #f7931e;
 }
@@ -662,68 +665,53 @@ form{
     background: #f7931e;
 }
 /* userprofile */
-.userdashboard{
-    display: flex;
-    flex-wrap: wrap;
-    /* grid-template-columns: 1fr 6fr  4fr;
-    justify-items: center;
-  align-items: center; */
+.statboard{
+    float: left;
 }
-.profileavatar{
-    flex-basis: 20%;
-}
-.profileavatar h3{
-    display: inline;
-}
-.usermenu{
-    flex-basis: 30%;
-}
-#userdashboardsearch {
-    flex-basis: 40%;
-}
-.userdashbtn{
-    flex-basis: 10%;
-}
-.usermenu li{
-    display: inline;
-    padding: 20px;
-}
-.usermenu li a:hover{
-   color: #f26522;
-}
-#userdashboardsearch input{
-    border: 1px solid  #f26522;
-    border-radius: 5px;
-}
-.usersearchinput{
-    width: 60%;
-    padding: 5px;
 
+
+.statboard2{
+    float: right;
+    border-left: 2px solid #f26522;
 }
-#userdashboardsearch {
-    flex-basis: 40%;
+.statboard2 li{
+    display: inline;
+    padding: 5px;
 }
-.userdashbtn{
-    flex-basis: 10%;
+
+
+.statboard2 ul{
+    float: left;
+    margin: 10px;
+    padding: 5px;
 }
-.userdashbtn button{
-    
-    font-weight: 400;
-    padding: 10px;
-    width: 100px;
+
+.statboard2 input{
+    float: left;
+    margin: 10px;
+    padding: 5px;
     border: 1px solid  #f26522;
     border-radius: 5px;
-    font-size: 15px;
+}
+.statboard2 li a:hover{
+    color: #f26522;
+ }
+.statboard2 button{
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid  #f26522;
+    border: none;
+    border-radius: 5px;
+    background: #f26522;
+    color: #fff;
     font-family: 'Thasadith', sans-serif;
-    font-weight: 700;
-    background:  #f26522;
-    color:  #fff;
-    height: 40px;
- 
+    font-weight: 500;
 }
-.userdashbtn button:hover{
+.statboard2 button:hover{
     background: #f7931e;
-}
+    color: #fff;
+    }
 
 .userprofile{
     display: flex;
@@ -863,9 +851,6 @@ aside li{
 .far, .fas{
     padding: 0px 15px 0px 0px;
 }
-aside li a{
-   
-}
 aside li a:hover{
    color: #f7931e;
 }
@@ -950,9 +935,6 @@ width: 60%;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;
-}
-.meetuptime{
-    
 }
 .meetupcontennt{
     justify-self: start;
@@ -1195,9 +1177,6 @@ border-radius: 5px;
     
     justify-content: center;
     }
-    .boximg{
-        
-    }
     
 
     .footercont{
@@ -1345,29 +1324,22 @@ border-radius: 5px;
         width: 95%;
         margin: 10px;
      }
-     .userdashboard{
+
+    .statboard{
         display: block;
-        text-align: center;
     }
-    .profileavatar{
+    .statboard2{
         display: block;
-        margin: 10px;
     }
-    .usermenu{
+    .statboard2 ul, .statboard2 li{
         display: block;
-        margin: 10px;
     }
-    #userdashboardsearch {
-        display: inline-block;
-        margin: 10px;
-        width: 100%;
+    .statboard2 input{
+        display: block;
+        width: 90%;
     }
-    .userdashbtn{
-        display: none;
-    }
-    .usersearchinput{
-        width: 80%;
-        padding: 5px;
+    .statboard2 button{
+        display: block;
     }
     .userprofile{
         display: block;
