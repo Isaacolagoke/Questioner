@@ -21,7 +21,7 @@ body{
     width: 97%;
     margin: auto;
     overflow: hidden;
-    padding: 5px;
+    /* padding: 5px; */
 }
 .container2{
     width: 100%;
@@ -72,7 +72,7 @@ h3{
     font-size: 18px;
     line-height: 22px;
     min-height: 10px;
-    font-weight: 500;
+    font-weight: 700;
     font-family:'Thasadith', sans-serif;
 
 }
@@ -87,7 +87,7 @@ p{
     font-size: 13px;
     line-height: 22px;
     min-height: 10px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Thasadith', sans-serif;
 
 }
@@ -104,9 +104,14 @@ a{
 nav{
     background:  #f26522;
     min-height: 50px;
-    padding: 10px;
+    padding: 5px;
     color: #fff;
 }
+
+
+
+
+
 .hightlight{
     cursor: pointer;
     color:  #fff;
@@ -571,44 +576,132 @@ form{
     display: block;
     width: 500px;
 }
-.upvotecount, .downvotecount{
-    margin: 5px;
-}
+
 /* meetup */
-.currentmeetups{
-    display: block;
-    /* grid-template-columns: 2fr 1fr;
-    grid-gap: 10px; */
-}
-.usercard{
-   float: right;
-   width: 30%;
-}
+
 /* meetupquestions and answers div */
 .currentmeetupsQC{
-    float: left;
-    width: 65%;
+    justify-content: center;
+    width: 70%;
     display: grid;
-    
-   
+    margin: 0 auto;
 }
+.meetupcontennt h3, .currentmeetupsQCdiv p{
+    display: inline;
+    font-weight: 600;
+}
+.meetupcontennt h1{
+    font-weight: 800;
+}
+.currentmeetupsQCdiv p, .currentmeetupsQCdiv span{
+    padding: 0;
+    margin: 0;
+}
+#QtnAsked{
+    color: #f7931e;
+}
+.meetupQ{
+   margin-top: 5px;
+   color: #5a596a;
+   cursor: pointer;
+}
+
+.meetupQj{
+    color: #5a596a;
+}
+#meetupQh:hover{
+    color: #f7931e;
+ }
+#upvotecount, #downvotecount{
+display: inline;
+}
+
 .currentmeetupsQCdiv{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
+    display: inline;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     background: #fff;
     border-radius: 5px;
 }
+
+#questionfield{
+    display: none;
+    background: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.askquestions{
+    margin: 5px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.askQuesdiv{
+    display: flex;
+}
+.askQuesAvt{
+    
+}
+.askQuesUsr{
+    
+}
+.askQuesCnt{
+    display: block;
+    width: 80%;
+    margin-left: 50px;
+}
+.qw1{
+    font-weight: 600px
+}
+.qw2{
+    font-weight: 700px
+}
+.qw3{
+    font-weight: 800px
+}
+.questionfieldS{
+    padding: 5px;
+    color: #fff;
+    background: #f26522;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}
+.questionfieldS:hover{
+    background: #f7931e;
+}
+.askquestionstext{
+    width: 100%;
+}
+
 .askquestions2{
     margin-top: 5px;
 }
 .askquestionsinput{
     width: 70%;
     padding: 3px;
-    border: none;
     border-radius: 5px;
+}
+.votevotebtn{
+    display: flex;
+    justify-content: center;
+}
+#upvotecount, #downvotecount, #askquestionsbtn{
+    margin: 0 30px;
+    cursor: pointer;
+}
+#votecountUp:hover, #votecountdown:hover, #askquestionsbtn:hover{
+    color: #f7931e;
+}
+#meetupQh, #meetupRSVP{
+    font-size: 20px;
+}
+#votecountUp, #votecountdown, #askquestionsbtn{
+    font-size: 20px;
+}
+#comentfield{
+    display: none;
 }
 .askquestionsinputbtn{
    border-radius: 5px;
@@ -619,13 +712,19 @@ form{
    margin-left: 3px; 
 }
 .askquestionsinputbtn:hover{
+    padding: 5px;
+    color: #fff;
+    background: #f26522;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}{
     background: #f7931e;
 }
 .askquestionsinput2{
     margin-left: 30px;
     width: 70%;
     padding: 3px;
-    border: none;
     border-radius: 5px;
 }
 .askquestionsinputbtn2{
@@ -664,6 +763,30 @@ form{
 .meetupbtn:hover{
     background: #f7931e;
 }
+/* allmeetups.html */
+.mt{
+    margin-top: 30px;
+}
+.suggestedcnt{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.suggestedcnt:hover{
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+}
+.Sdate p{
+    display: inline;
+}
+.SuggestedMeetupCnt{
+    float: left;
+    width: 80%;
+}
+.SuggestedMeetupCntd p{
+    
+}
 /* userprofile */
 .statboard{
     float: left;
@@ -672,13 +795,21 @@ form{
 
 .statboard2{
     float: right;
-    border-left: 2px solid #f26522;
+    border-left: 2px solid #fff;
 }
 .statboard2 li{
     display: inline;
     padding: 5px;
 }
-
+.statboard2 li a{
+    color: #fff;
+    margin:10px;
+ }
+.statboard2 li a:hover{
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+ }
 
 .statboard2 ul{
     float: left;
@@ -693,15 +824,12 @@ form{
     border: 1px solid  #f26522;
     border-radius: 5px;
 }
-.statboard2 li a:hover{
-    color: #f26522;
- }
+
 .statboard2 button{
     float: left;
     margin: 10px;
     padding: 5px;
-    border: 1px solid  #f26522;
-    border: none;
+    border: 1px solid  #fff;
     border-radius: 5px;
     background: #f26522;
     color: #fff;
@@ -729,6 +857,11 @@ form{
 }
 .trendingquestions{
     flex-basis: 30%;
+}
+.questionsaskedcount{
+    background: #fff;
+    padding: 5px;
+    
 }
 /* admin */
 .adimindminlogin{
@@ -973,6 +1106,7 @@ color: #f7931e;
 .editprofile{
 display: flex;
 justify-content: center;
+margin: 0 auto;
 }
 .editprofile{
 flex-basis: 35%;
