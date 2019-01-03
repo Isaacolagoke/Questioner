@@ -10,132 +10,104 @@
     <title>Questioner.meetup</title>
 </head>
 <body>
-    <div>
-        <nav>
-            <div class="container">
-                <h1 class="hightlight" onclick="location.href='index.html'">Questioner</h1>
-            </div>
-        </nav>
-   </div>
-
-   
-
-<section>
-<div class="display">
-        <div class="container1">
+<nav>
+   <div class="container1">
                 <div class="statboard">
-                        <span><i class="far fa-user-circle fa-3x"></i></span>
-                        
+                        <h1 class="hightlight" onclick="location.href='index.html'">Questioner</h1> 
                 </div>
-                <div class="statboard2">
+                <div class="statboard2">          
                             <ul>
+                                <!-- <span><i class="far fa-user-circle fa-3x"></i></span> -->
                                 <li><a href="userprofile.html">Your Profile</a></li>
-                            </ul>
-                        
+                            </ul>      
                         <input type="text" placeholder="search for meetups">
                         <button onclick="location.href='index.html'">Sign Out</button>
                 </div>
-           </div>  
-</div>            
-</section>
+           </div> 
+</nav>
 
 <section>
 <div class="container3">
-        <div class="currentmeetups">
-                    <div class="currentmeetupsQC">
-                            <div class="yourmeetupsdiv">
-                                    <h1>Suggested Meetups</h1>
-                            </div>
-                            <!--  -->
-                            <div class="currentmeetupsQCdiv">
-                                    <div class="meetuptime">
-                                            <h3 id="meetupdate">Oct 8 2018</h3>
-                                            <h3 id="meetuptime">10:00am</h3>
-                                                  <!-- Meetup Votes -->
-                                            <div class="votevote">
-                                                    <div class="upvotecount">
-                                                            <span> <i class="fas fa-angle-double-up fa-lg"></i></span>
-                                                    </div>
-                                                        
-                                                     <div class="downvotecount">
-                                                            <span> <i class="fas fa-angle-double-down fa-lg"></i></span>
-                                                    </div>
-                                            </div> 
-                                    </div>
-                                    <div class="meetupcontennt">
-                                            <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                            <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                            <p>11 Enthusiasts going</p>   
-                                                  <!-- Meetup comments -->
-                                            <div class="askquestions">
-                                                <P><span><i class="far fa-question-circle"></i></span> Questions ?</P>
-                                                    <!-- <input type="text" class="askquestionsinput" placeholder="Ask Questions about this meetup"> <button type="submit" class="askquestionsinputbtn">Submit</button> -->
-                                                    <div class="askquestions2">
-                                                        <!-- meetup question comments -->
-                                                        <P class="askquestionsinput2"><span><i class="far fa-comments"></i></span>Comments</P>
-                                                        
-                                                            <!-- <input type="text" class="askquestionsinput2" placeholder="comment on this Questions"><button type="submit" class="askquestionsinputbtn2">Submit</button>  -->
-                                                    </div>
-                                            </div>
-                                    </div>
-                            </div>
-
-                            <!--  -->
-                            <div class="currentmeetupsQCdiv">
-                                    <div class="meetuptime">
-                                            <h3 id="meetupdate">Oct 8 2018</h3>
-                                            <h3 id="meetuptime">10:00am</h3>
-                                                  <!-- Meetup Votes -->
-                                            <div class="votevote">
-                                                    <div class="upvotecount">
-                                                            <span> <i class="fas fa-angle-double-up fa-lg"></i></span>
-                                                    </div>
-                                                        
-                                                     <div class="downvotecount">
-                                                            <span> <i class="fas fa-angle-double-down fa-lg"></i></span>
-                                                    </div>
-                                            </div> 
-                                    </div>
-                                    <div class="meetupcontennt">
-                                            <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                            <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                            <p>11 Enthusiasts going</p>   
-                                                  <!-- Meetup comments -->
-                                            <div class="askquestions">
-                                                <P><span><i class="far fa-question-circle"></i></span> Questions ?</P>
-                                                    <!-- <input type="text" class="askquestionsinput" placeholder="Ask Questions about this meetup"> <button type="submit" class="askquestionsinputbtn">Submit</button> -->
-                                                    <div class="askquestions2">
-                                                        <!-- meetup question comments -->
-                                                        <P class="askquestionsinput2"><span><i class="far fa-comments"></i></span>Comments</P>
-                                                        
-                                                            <!-- <input type="text" class="askquestionsinput2" placeholder="comment on this Questions"><button type="submit" class="askquestionsinputbtn2">Submit</button>  -->
-                                                    </div>
-                                            </div>
-                                    </div>
-                            </div>
-
-                            <!--  -->
+    
+        <div class="currentmeetupsQC">
+                <div class="yourmeetupsdiv">
+                        <h1>Meetup</h1>
                 </div>
+                <!--  -->
+                <div class="currentmeetupsQCdiv">
+                        <div class="meetupcontent">
+                        <h3> Date: </h3> <span><time datetime="2018-07-07">July 7, 2018</time></span> <time datetime="20:00">20:00</time>
+                        <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
+                        <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
+                        <p>11 Enthusiasts going</p> | <p id="QtnAsked">Question Asked: <span id="QtnAsked">102</span></p> <br> 
+                        <span class="meetupQ">
+                           <P id="meetupQh" onclick="displayQuestion()"> Questions ? <i class="far fa-question-circle"></i></P> 
+                           <P id="meetupRSVP"> RSVP ? <i class="far fa-check-circle"></i></P>
+                        </span>
                         
-                    <div class="usercard">
-                                <div class="yourmeetupsdiv">
-                                        <h1>All Meetups</h1>
+                                
+                        </div> <!-- Meetup contents ends -->
+                </div> <!--currentmeetupsQCdiv ends-->
+                <div id="questionfield">
+                        <textarea name="" id="" rows="3" maxlength="200" class="askquestionstext" placeholder="Ask Questions about this Meetup. (200 characters Max)"></textarea>
+                        <input type="submit" value="Submit" class="questionfieldS">
+                </div> <!--questionfield ends-->
+                <div class="askquestions">
+                        <div class="askQuesdiv">
+                                <div class="askQuesAvt"><i class="far fa-question-circle fa-2x"></i></div>
+                                <div class="askQuesUsr">
+                                        <h3>Isaac Olagoke</h3>
+                                        <p>@Isaac</p>
                                 </div>
-
-                            <div class="allmeetupsdiv">
-                                    <div class="allmeetupsdivdate">
-                                        <h3 id="meetupdate">Oct 8 2018</h3>
-                                        <h3 id="meetuptime">10:00am</h3>
-                                    </div>
-                                    <div class="allmeetupsdivdesc">
-                                            <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                            <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                            <p>11 Enthusiasts going</p>  
-                                    </div>
-                            </div>        
-                    </div>   
-    </div>
-</div>
+                        </div>
+                        <div class="askQuesCnt">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eaque possimus, suscipit, in alias, ea harum reiciendis consequuntur blanditiis at molestiae porro eveniet modi! Id nostrum beatae reprehen</p>
+                        </div>
+                        <hr>
+                        <div class="votevote">
+                                <div class="votevotebtn">
+                                        <div id="upvotecount">
+                                        <span id="votecountUp"> <i class="fas fa-angle-double-up"></i> 8</span>
+                                        </div>
+                                        <div id="downvotecount">
+                                        <span id="votecountdown"> <i class="fas fa-angle-double-down"></i> 4</span>
+                                        </div>
+                                        <P id="askquestionsbtn" onclick="comment()"><span><i class="far fa-comments"></i></span>10</P>
+                                </div> <!--vote votebtn ends-->                    
+                                <div id="comentfield">
+                                        <textarea name="" id="" rows="3" maxlength="200" class="askquestionstext" placeholder="Ask Questions about this Meetup. (200 characters Max)"></textarea>
+                                        <input type="submit" value="Comment" class="questionfieldS">
+                                </div> <!--comentfield ends-->
+                        </div> <!--vote vote ends-->
+                </div> <!--askquestions end-->
+        </div> <!--currentmeetupsQC ends--> 
+</div> <!--container 3 ends-->
 </section>
+
+
+
+
+
+<script>
+const displayQuestion = () => {
+        let display = document.getElementById('questionfield');
+        if (display.style.display == 'block'){
+                display.style.display = 'none';
+        }else{
+                display.style.display = 'block';
+        }
+};
+// document.getElementById("meetupQh").onclick = () => {
+//         mainForm.removeChild(questionfield);
+//     }
+const comment = () => {
+        let text = document.getElementById("comentfield");
+        if (text.style.display == 'block'){
+                text.style.display = 'none';    
+        }else{
+               text.style.display = 'block';  
+        }
+};
+</script>
 </body>
 </html>
