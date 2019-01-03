@@ -494,7 +494,7 @@ form h3{
     margin-top: 20px;
     font-size: 30px;
     font-weight: 100;
-    line-height: 24px;
+    line-height: 30px;
     font-family: 'Thasadith', sans-serif;
     color: #fff; 
 }
@@ -1424,9 +1424,9 @@ border-radius: 5px;
         text-align: center;
         padding: 5px;
         margin-bottom: 20px;
-        font-size: 45px;
+        font-size: 25px;
         font-weight: 100;
-        line-height: 24px;
+        line-height: 35px;
         font-family: 'Thasadith', sans-serif;
         color: #f26522; 
     }
