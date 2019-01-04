@@ -1,7 +1,7 @@
 {
-  "name": "bookstore",
+  "name": "questioner",
   "version": "1.0.0",
-  "description": "A bookstore API",
+  "description": "A questioner API",
   "main": "server.js",
   "author": "Sam",
   "license": "ISC",
