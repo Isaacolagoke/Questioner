@@ -4,9 +4,8 @@
   "description": "This Project (Questioner) is part of the Requirement to becoming an Andella Fellow.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true",
-    "start": "node index",
-    "dev": "nodemon index"
+    "postinstall": "npm install --prefix server",
+    "start": "npm start --prefix server"
   },
   "repository": {
     "type": "git",

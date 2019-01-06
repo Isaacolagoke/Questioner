@@ -3,12 +3,12 @@ let express = require('express');
 let app = express();
 let morgan = require('morgan');
 let bodyParser = require('body-parser');
-let port = 8080;
 let config = require('config'); //we load the db location from the JSON files
 let meetup = require('./app/routes/meetup');
 let question = require('./app/routes/question');
 
 
+let port = config.util.getEnv('PORT') || 8080;
 //don't show the log when it is test
 if(config.util.getEnv('NODE_ENV') !== 'test') {
 	//use morgan to log at command line
