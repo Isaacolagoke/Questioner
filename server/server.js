@@ -8,7 +8,7 @@ let meetup = require('./app/routes/meetup');
 let question = require('./app/routes/question');
 
 
-let port = config.util.getEnv('PORT') || 8080;
+let port = process.env.PORT || 8080;
 //don't show the log when it is test
 if(config.util.getEnv('NODE_ENV') !== 'test') {
 	//use morgan to log at command line
