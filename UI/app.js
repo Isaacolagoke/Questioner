@@ -1,9 +1,19 @@
 const displayQuestion = () => {
-    document.getElementById('questionfield').style.display = 'block';
+    const display = document.getElementById('questionfield');
+    if (display.style.display == 'block'){
+            display.style.display = 'none';
+    }else{
+            display.style.display = 'block';
+    }
 };
 // document.getElementById("meetupQh").onclick = () => {
 //         mainForm.removeChild(questionfield);
 //     }
 const comment = () => {
-    document.getElementById('comentfield').style.display = 'block';
+    const text = document.getElementById('comentfield');
+    if (text.style.display == 'block') {
+            text.style.display = 'none';  } 
+            else {
+           text.style.display = 'block';  
+    }
 };

@@ -4,9 +4,10 @@
   "description": "This Project (Questioner) is part of the Requirement to becoming an Andella Fellow.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true",
-    "start": "node index",
-    "dev": "nodemon index"
+    "postinstall": "npm install --prefix server",
+    "start": "npm start --prefix server",
+    "coverage": "`npm bin`/istanbul cover ./test/runner.js",
+    "coveralls": "npm run-script coverage && node bin/coveralls.js < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,10 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^2.7.1",
     "express": "^4.16.4",
-    "mocha": "^5.2.0"
+    "istanbul": "~0.2.4",
+    "mocha": "^5.2.0",
+    "sinon": "~1.8.0"
   }
 }
