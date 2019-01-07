@@ -33,7 +33,7 @@ function getUpcomingMeetups(req, res) {
 
 /*
  * POST /Respond to meetup RSVP
- */
+*/
 function postMeetupRsvps(req, res) {
 	// Respond to meetup RSVP
 	res.json({status: 200, data: [meetup]});
@@ -42,4 +42,4 @@ function postMeetupRsvps(req, res) {
 
 
 //export all the functions
-module.exports = { getMeetups, postMeetup, getMeetupId,getUpcomingMeetups,postMeetupRsvps };
+module.exports = { getMeetups, postMeetup, getMeetupId, getUpcomingMeetups, postMeetupRsvps };

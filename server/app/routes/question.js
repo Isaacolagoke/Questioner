@@ -1,7 +1,6 @@
 let question = require('../models/question');
 
 
-
 /*
  * POST /Create a question for a specific meetup.
  */
@@ -29,4 +28,4 @@ function downvoteQuestion(req, res) {
 
 
 //export all the functions
-module.exports = {  postQuestion, upvoteQuestion, downvoteQuestion};
+module.exports = { postQuestion, upvoteQuestion, downvoteQuestion };
