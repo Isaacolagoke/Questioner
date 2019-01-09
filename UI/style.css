@@ -342,28 +342,29 @@ header{
     margin-bottom: 20px;
 }
 .hitworks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    margin: 30px 0px;
-    cursor: pointer;
+    margin: 30px 0px
 }
+.hitworks:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .hitworksbox{
-    border-radius: 5px;
+    float: left;
+  width: 20%;
+  padding: 10px;
+}
+.hitcardcard{
     padding: 5px;
-    flex-basis: 15%;
-    margin-bottom: 5px;
+    text-align: center;
 }
 .hitworksbox:hover{
-    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
-    background: #ddd;
-    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    cursor: pointer;
 }
-.gotquestionimg{
-    text-align: center;
-    padding: 20px;
-}
+
 .frontdisplay{
     min-height: 150px;
     background: #f26522;
@@ -393,7 +394,7 @@ header{
     padding: 10px;
     width: 300px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 20px;
     font-family: 'Thasadith', sans-serif;
     font-weight: 700;
@@ -706,7 +707,7 @@ display: inline;
 .meetupcard:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  }
-.meetupcard img, .Singlemeetupcard img{
+.meetupcard img, .Singlemeetupcard img, .adminmeetupcard img{
     width: 100px;
     height: 100px;  
 }
@@ -793,8 +794,8 @@ display: inline;
 }
 /* admin */
 .adimindminlogin{
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    margin: 30px auto;
 }
 
 
@@ -879,11 +880,13 @@ aside{
     width: 20%;
     float:left;
     padding: 20px;
+    height: 100vh;
     box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
 
 }
 article{
-    width: 70%;
+    text-align: center;
+    width: 75%;
     float: right;
     padding: 20px;
 }
@@ -914,10 +917,11 @@ aside li a:hover{
    color: #f7931e;
 }
 
+
 /* admincreate meetup */
 .admincreatemeetup{
     display: flex;
-    justify-content: center;
+    margin: 30px auto;
 }
 .admincreatemeetupinstruction{
     flex-basis: 30%;
@@ -927,18 +931,10 @@ aside li a:hover{
     border-radius: 5px;
 }
 .admincreatemeetupform{
-    flex-basis: 65%;
-    align-items: flex-start;
+    flex-basis: 40%;
 }
-.admincreatemeetupform h3{
-    margin-left: 100px;
-    color: #f7931e;
-    font-size:35px;
-    font-weight: 700px;
-}
-.tyt{
-    text-align: left;
-}
+
+
 .meetuplabel{
     
     min-height: 25px;
@@ -973,36 +969,41 @@ aside li a:hover{
     border-radius: 5px;
 }
 /* adminmeetups.html */
-.meetmeetup{
-    display: block;
-    
-}
 .yourmeetups{
-float: left;
-width: 60%;
-
+    width: 65%;
+    margin: 10px auto;
 }
-.allmeetups{
-    float: right;
-    width: 35%;
-}
-.meetupdiv{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr;
-    grid-gap: 3px;
-    background: #fff;
+.adminmeetupcard{
+    margin: 30px auto 0 auto;
     padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    width: 75%; 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+   transition: 0.3s;
+   cursor: pointer;
+   border-radius: 3px;
+   border: 1px solid #ddd;
+   border-bottom: 0px;
 }
-.meetupcontennt{
-    justify-self: start;
+.adminmeetupfeed{
+    margin: 0 auto;
+   padding: 10px;
+    width: 75%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+   transition: 0.3s;
+   cursor: pointer;
+   border-radius: 3px;
+   border: 1px solid #ddd;
+  
 }
-.downvotecount{
-    justify-self: start;
+.adminmeetupfeed p{
+    display: inline;
 }
-.deletebox{
-    justify-self: center;
+.adminmeetupfeed i:hover{
+    color: #f7931e;
 }
 .deletebox span:hover, .upvotecount i:hover, .downvotecount i:hover{
 color: #f7931e;
@@ -1032,63 +1033,27 @@ color: #f7931e;
 .editprofile{
 display: flex;
 justify-content: center;
-margin: 0 auto;
+margin: 30px auto;
+width: 75%;
 }
-.editprofile{
-flex-basis: 35%;
-justify-content: center;
+.editprofilecard{
+    flex-basis: 35%;
+    justify-content: center;
+}
+.editprofilecardavatar{
+    padding: 15px;
+}
+.editprofilecardavatar img{
+   width: 150px;
+   height: 15opx;
 }
 .editprofileform{
     flex-basis: 50%;
     justify-content: center;
 }
-.editprofilecardavatar{
-    padding: 30px;
-}
 
 
-/* admindashboard */
-.admindashboardinterface{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    justify-content: space-around;
-    text-align: center;
-    
-}
-.meetups{
-    margin: 5px;
-    min-height: 150px;
-flex-basis: 45%;
-justify-content: center;
-background: #fff;
-border-radius: 5px;
-}
-.users{
-    margin: 5px;
-    min-height: 150px;
-    flex-basis: 45%;
-    justify-content: center;
-    background: #fff;
-border-radius: 5px;
-}
-.questions{
-    margin: 5px;
-    min-height: 150px;
-    flex-basis: 45%;
-    justify-content: center;
-    background: #fff;
-border-radius: 5px;
-}
-.comment{
-    margin: 5px;
-    min-height: 150px;
-    flex-basis: 45%;
-    justify-content: center;
-    background: #fff;
-border-radius: 5px;
-}
+
 
 
 
@@ -1480,7 +1445,11 @@ border-radius: 5px;
  .headtextp{
     font-size: 20px;
 }
-
+.hitworksbox {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

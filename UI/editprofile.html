@@ -15,11 +15,7 @@
 <div class="statboard">
 <h1 class="hightlight" onclick="location.href='index.html'">Questioner</h1> 
 </div>
-<div class="statboard2">          
-    <ul>
-        <li><a href="userprofile.html">Your Profile</a></li>
-        <li><a href="meetup.html">Meetups</a></li>
-    </ul>      
+<div class="statboard2">            
 <input type="text" placeholder="search for meetups">
 <button onclick="location.href='index.html'">Sign Out</button>
 </div>
@@ -27,38 +23,67 @@
 </nav>
 
 <section>
+    <div class="container">
+            <div class="meetupnav">
+            <ul>
+            <li><a href="userprofile.html">Your Profile</a></li>       
+            <li><a href="allmeetups.html">Meetups</a></li>
+            <li><a href="editprofile.html" class="active">Edit Profile</a></li>
+            <li><a href="meetupquestions.html">Your Questions</a></li>       
+            <li><a href="meetupcomments.html">Your Comments</a></li>
+            <li><a href="trendingquestions.html">Trending Questions</a> </li>
+            </ul>      
+            </div>
+    </div>
+<hr>
+</section>
+
+
+
+<section>
 <div class="container">
-    <div class="editprofile">
-                <div class="editprofilecard">
-                        <div class="editprofilecardavatar">
-                                <span><i class="far fa-user-circle fa-10x"></i></span>
-                                
-                        </div>
+<div class="editprofile">
+    <div class="editprofilecard">
+        <div class="editprofilecardavatar">
+        <img src="./image/avatar2.png" alt="">
+        </div>
+        <div class="div">
+        <p>Change Your profile picture</p>
+        
+        <input type="file" name="file" id="">
+        </div>
+    </div>
+<!--  -->
+    <div class="editprofileform">
+        <div class=>
+            <form action="">
+                <h3>Update Your Profile</h3> 
+                <div class="forma">
+                    <div class="name">
+                        <input type="text" placeholder="First Name" required pattern="[A-Z]" class="forminput">
+                        <input type="text" placeholder="Last Name" required pattern="[A-Z]" class="forminput">
+                    </div>    
+                    <div class="name">
+                        <input type="password" placeholder="Password" required pattern="[A-Z]" class="forminput">
+                    </div>       
                 </div>
-                <!--  -->
-                <div class="editprofileform">
-                                <form action="" class="tyt">
-                                        <div class="forma">
-                                            <div class="name">
-                                                
-                                                <input type="text" placeholder="First Name" required pattern="[A-Z]" class="meetupinput">
-                                                <br>
-                                                <input type="text" placeholder="Last Name" required pattern="[A-Z]" class="meetupinput">
-                                                <br>
-                                                    <input type="password" placeholder="Password" name="" id="" class="meetupinput">
-                                                    <br>
-                                                    <input type="number" placeholder="Phone Number" name="" id="" class="meetupinput">
-                                                    <br>
-                                                    <input type="email" name="" placeholder="Email" id="" class="meetupinput">
-                                        </div> 
-                                        <div class="formsubmit">
-                                                <input type="button" value="Update Profile" class="meetupformsubmit">
-                                        </div>
-                                    </form>
+
+                <div class="formb">
+                    <div class="email&tel">
+                        <input type="tel" placeholder="Phone Number" required pattern="[A-Z]" class="forminput">
+                        <input type="email" name="" placeholder="Email" id="" class="forminput">
+                    </div>   
+                </div> 
+
+                <div class="formsubmit">
+                    <input type="button" value="Update Profile" class="formsubmit" onclick="location.href='meetup.html'">
                 </div>
+
+            </form>
+        </div>      
     </div>
 </div>
-    
+</div>
 </section>
 </body>
 </html>

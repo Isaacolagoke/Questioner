@@ -17,3 +17,9 @@ const comment = () => {
            text.style.display = 'block';  
     }
 };
+
+// delete meetup
+const deletemeetup = () => {
+        let deletediv = document.getElementById('adminmeetupfeedDL');
+        deletediv.remove();   
+};
