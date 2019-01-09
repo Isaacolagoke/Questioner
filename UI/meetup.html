@@ -16,75 +16,59 @@
                 <div class="statboard">
                         <h1 class="hightlight" onclick="location.href='index.html'">Questioner</h1> 
                 </div>
-                <div class="statboard2">          
-                            <ul>
-                                <!-- <span><i class="far fa-user-circle fa-3x"></i></span> -->
-                                <li><a href="userprofile.html">Your Profile</a></li>
-                            </ul>      
+                <div class="statboard2">            
                         <input type="text" placeholder="search for meetups">
                         <button onclick="location.href='index.html'">Sign Out</button>
                 </div>
            </div> 
 </nav>
-
 <section>
-<div class="container3">
-    
-        <div class="currentmeetupsQC">
-                <div class="yourmeetupsdiv">
-                        <h1>Meetup</h1>
-                </div>
-                <!--  -->
-                <div class="currentmeetupsQCdiv">
-                        <div class="meetupcontent">
-                        <h3> Date: </h3> <span><time datetime="2018-07-07">July 7, 2018</time></span> <time datetime="20:00">20:00</time>
-                        <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                        <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                        <p>11 Enthusiasts going</p> | <p id="QtnAsked">Question Asked: <span id="QtnAsked">102</span></p> <br> 
-                        <span class="meetupQ">
-                           <P id="meetupQh" onclick="displayQuestion()"> Questions ? <i class="far fa-question-circle"></i></P> 
-                           <P id="meetupRSVP"> RSVP ? <i class="far fa-check-circle"></i></P>
-                        </span>
-                        
-                                
-                        </div> <!-- Meetup contents ends -->
-                </div> <!--currentmeetupsQCdiv ends-->
-                <div id="questionfield">
+<div class="container">
+        <div class="meetupnav">
+                <ul>
+                <li><a href="allmeetups.html" class="active" >Meetups</a></li>
+                <li><a href="userprofile.html">Your Profile</a></li>
+                </ul>    
+        </div>
+</div>
+<hr>
+</section>
+<section>
+<div class="container">
+         <!-- meetups -->
+         <div class="Singlemeetupcard">
+                        <img src="./image/blockchain.jpg" alt="Avatar">
+                        <div class="meetupcardcnt">
+                            <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
+                            <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
+                            <p>Feburary 5, 2018</p> <p>20:00</p>
+                            <P id="meetupQh" onclick="displayQuestion()"> Questions ? <i class="far fa-question-circle"></i></P> 
+                        </div>
+                        <div class="meetupcardrsvp">
+                                <P id="meetupRSVP" onclick="location.href='meetup.html'"> RSVP ? <i class="far fa-check-circle"></i></P>
+                                <p id="QtnAsked">Question Asked: <span id="QtnAsked">102</span></p>
+                                <p>11 Enthusiasts going</p> 
+                        </div>
+         </div>  <!-- meetup end --> 
+          <!-- meetupsQuestion -->
+        <div id="meetupsQuestion">
                         <textarea name="" id="" rows="3" maxlength="200" class="askquestionstext" placeholder="Ask Questions about this Meetup. (200 characters Max)"></textarea>
                         <input type="submit" value="Submit" class="questionfieldS">
-                </div> <!--questionfield ends-->
-                <div class="askquestions">
-                        <div class="askQuesdiv">
-                                <div class="askQuesAvt"><i class="far fa-question-circle fa-2x"></i></div>
-                                <div class="askQuesUsr">
-                                        <h3>Isaac Olagoke</h3>
-                                        <p>@Isaac</p>
-                                </div>
-                        </div>
-                        <div class="askQuesCnt">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eaque possimus, suscipit, in alias, ea harum reiciendis consequuntur blanditiis at molestiae porro eveniet modi! Id nostrum beatae reprehen</p>
-                        </div>
-                        <hr>
-                        <div class="votevote">
-                                <div class="votevotebtn">
-                                        <div id="upvotecount">
-                                        <span id="votecountUp"> <i class="fas fa-angle-double-up"></i> 8</span>
-                                        </div>
-                                        <div id="downvotecount">
-                                        <span id="votecountdown"> <i class="fas fa-angle-double-down"></i> 4</span>
-                                        </div>
-                                        <P id="askquestionsbtn" onclick="comment()"><span><i class="far fa-comments"></i></span>10</P>
-                                </div> <!--vote votebtn ends-->                    
-                                <div id="comentfield">
-                                        <textarea name="" id="" rows="3" maxlength="200" class="askquestionstext" placeholder="Ask Questions about this Meetup. (200 characters Max)"></textarea>
-                                        <input type="submit" value="Comment" class="questionfieldS">
-                                </div> <!--comentfield ends-->
-                        </div> <!--vote vote ends-->
-                </div> <!--askquestions end-->
-        </div> <!--currentmeetupsQC ends--> 
-</div> <!--container 3 ends-->
+        </div>  <!--  meetupsQuestionmeetup end --> 
+        <div id="meetupsCommentcard"> <!--meetupsCommentcard -->
+            <img src="./image/avatar2.png" alt=""> 
+            <h3>Isaac Olagoke</h3>
+            <p>@Isaac</p>   
+            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsa placeat sapiente aperiam omnis repudiandae sit, vitae nostrum praesentium error, veritatis numquam nulla alias tempora amet dignissimos, ducimus atque quia?</h5>
+            <hr>
+            <p> 8 </p><i class="fas fa-thumbs-up" id="votecountUp"></i> <p>10 </p>  <i class="fas fa-thumbs-down" id="votecountUp" ></i> <p> 12</p> <i onclick="comment()"class="far fa-comments" id="votecountUp"></i>
+            <div id="meetupscomment">
+                        <textarea name="" id="" rows="3" maxlength="200" class="askquestionstext" placeholder="Ask Questions about this Meetup. (200 characters Max)"></textarea>
+                        <input type="submit" value="Comment" class="questionfieldS">
+            </div>  <!--  meetupscomment end --> 
+        </div>   <!--meetupsCommentcard end -->
+       
 </section>
-
 
 </body>
 </html>

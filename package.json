@@ -2,9 +2,10 @@
   "name": "questioner",
   "version": "1.0.0",
   "description": "This Project (Questioner) is part of the Requirement to becoming an Andella Fellow.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "postinstall": "npm install --prefix server",
+    "test": "mocha --timeout 10000",
     "start": "npm start --prefix server",
     "coverage": "`npm bin`/istanbul cover ./test/runner.js",
     "coveralls": "npm run-script coverage && node bin/coveralls.js < coverage/lcov.info"
@@ -23,12 +24,19 @@
     "eslint": "^5.11.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
   },
   "dependencies": {
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0",
     "chai": "^4.2.0",
-    "coveralls": "^2.7.1",
-    "express": "^4.16.4",
+    "coveralls": "^2.13.3",
     "istanbul": "~0.2.4",
     "mocha": "^5.2.0",
     "sinon": "~1.8.0"
