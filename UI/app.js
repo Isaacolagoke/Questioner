@@ -1,5 +1,5 @@
 const displayQuestion = () => {
-    const display = document.getElementById('questionfield');
+    const display = document.getElementById('meetupsQuestion');
     if (display.style.display == 'block'){
             display.style.display = 'none';
     }else{
@@ -10,7 +10,7 @@ const displayQuestion = () => {
 //         mainForm.removeChild(questionfield);
 //     }
 const comment = () => {
-    const text = document.getElementById('comentfield');
+    const text = document.getElementById('meetupscomment');
     if (text.style.display == 'block') {
             text.style.display = 'none';  } 
             else {

@@ -2,9 +2,7 @@ body{
     font: 15px/1.5 'Montserrat', sans-serif 'Thasadith', sans-serif;
     padding: 0;
     margin: 0;
-    background: #ddd;
-    
-    
+    background: #fff;
 }
 
 * {
@@ -56,7 +54,7 @@ input[type="button"]{
     color: #fff;
     border: none;
     padding: 5px;
-
+    cursor: pointer;
 }
 input[type="button"]:hover{
     background:#f7931e;
@@ -194,7 +192,7 @@ nav{
     color:  #fff;
     text-align: center;
     vertical-align: middle;
-    
+    cursor: pointer;
 }
 #headnavbutton button:hover{
     background: #f7931e;
@@ -257,7 +255,7 @@ header{
     padding: 10px;
     width: 150px;
     border: 1px solid  #f26522;
-    border-radius: 10px;
+    border-radius: 25px;
     font-size: 15px;
     font-family: 'Thasadith', sans-serif;
     font-weight: 700;
@@ -265,6 +263,7 @@ header{
     color:  #fff;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 .headercontentbtn button:hover{
     color: #fff;
@@ -280,8 +279,8 @@ header{
 .divcaption h1{
     color:  #f26522;
     font-size: 30px;
-    font-weight: 600;
-    font-family: 'Thasadith', sans-serif;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -289,7 +288,6 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
-    
     justify-content: center;
 }
 .boximg{
@@ -297,11 +295,13 @@ header{
     margin-bottom: 40px;
     text-align: center;
     border-radius: 10px;
-    min-height: 70px;
-    width: 100%;
+    min-height: 70px; 
+    width: 95%;
     align-self: center;
     justify-self: center;
     padding:10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
 }
 .boximg h2{
     color:  #f26522;
@@ -316,12 +316,11 @@ header{
     font-weight: 600;
     line-height: 30px;
     font-family: 'Thasadith', sans-serif;
-
     color: #5a596a;
 }
 
 .boximg:hover{
-    box-shadow: 5px 5px 5px #f26522;
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
 }
 .boximg img{
     width: 50px;
@@ -336,22 +335,34 @@ header{
 }
 .gotquestion h1{
     color:  #f26522;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Thasadith', sans-serif;
-
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
     margin-bottom: 20px;
+}
+.hitworks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+.hitworksbox{
+    border-radius: 5px;
+    padding: 5px;
+    flex-basis: 15%;
+    margin-bottom: 5px;
+}
+.hitworksbox:hover{
+    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+    background: #ddd;
+    color: #fff;
 }
 .gotquestionimg{
     text-align: center;
     padding: 20px;
-}
-.gotquestionimg img{
-    padding: 0px 50px 50px 50px;
-}
-
-.gotquestionimg img:hover{
-    box-shadow: 5px 5px 5px #f7931e;
 }
 .frontdisplay{
     min-height: 150px;
@@ -365,26 +376,23 @@ header{
 }
 
 .frontdisplay h3{
-    margin-top: 30px;
+    margin: 30px 0px 50px 0px;;
     color:  #fff;
     font-size: 40px;
     font-weight: 100;
     line-height: 30px;
-    font-family: 'Thasadith', sans-serif;
-
-    margin-bottom: 20px;
+    font-family: 'Monteserrat', sans-serif;
+    
 }
 
 .frontdisplay button{
     min-height: 50px;
     border: 2px solid #fff;
-
-    margin-right: 20px;
     display: inline-block;
     font-weight: 400;
     padding: 10px;
     width: 300px;
-    
+    cursor: pointer;
     border-radius: 5px;
     font-size: 20px;
     font-family: 'Thasadith', sans-serif;
@@ -393,7 +401,7 @@ header{
     color:  #fff;
     text-align: center;
     vertical-align: middle;
-
+    margin-bottom: 30px;
 }
 
 .frontdisplay button:hover{
@@ -419,18 +427,16 @@ footer{
 
 .foota li a{
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     font-family:'Thasadith', sans-serif;
-
     color:#5a596a;
 }
 .foota h3{
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 500;
     line-height: 24px;
     font-family: 'Thasadith', sans-serif;
-
     color:#f26522;
 }
 
@@ -465,32 +471,29 @@ form h3{
     text-align: center;
     padding: 5px;
     margin-bottom: 20px;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 100;
     line-height: 24px;
     font-family: 'Thasadith', sans-serif;
     color: #f26522; 
 }
 .formsignup{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
-    margin: 50px auto;
+    margin: 35px auto;
 }
 .divsignup2{
     padding: 20px;
     background: #f7931e;
     color: #fff;
-    margin-top: 50px;
+    margin:0 auto;
     align-self: center;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
+    width: 50%;
     box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
 }
 .divsignup2 h3{
     text-align: center;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 20px;
     font-size: 30px;
     font-weight: 100;
@@ -500,53 +503,37 @@ form h3{
 }
 
 .signup{
-    padding: 20px;
-    margin-top: 50px;
+    margin: 10px auto;
+    width: 50%;
     box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
-    justify-self: start;
 }
 form{
     background: #ddd;
     padding: 20px;
     border-radius:5px; 
-    text-align: center;
 }
    
 .forminput{
-    min-width: 397px;
-    min-height: 25px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 10px;
+    min-width: 100%;
     font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 15px;
     font-weight: 700;
     line-height: 24px;
     font-family: 'Thasadith', sans-serif;
     color: #5a596a;
-    border-radius: 5px;
-    border: none;
-}
-.forminputname{
-    min-width: 190px;
-    min-height: 25px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 24px;
-    font-family: 'Thasadith', sans-serif;
-    color: #5a596a;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
 }
 .formsubmit{
-    padding: 5px;
-    min-width: 398px;
-    min-height: 25px;
-    border-radius: 5px;
+    min-width: 100%;
+    font-size: 15px;
+    margin: 5px 0;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Thasadith', sans-serif;
+    border-radius: 25px;
     border: none;
-    margin-top: 0;
 }
 .formalt{
     padding: 10px;
@@ -569,37 +556,87 @@ form{
     font-size: 18px;
     font-weight: 700;
     font-family: 'Thasadith', sans-serif;
-
 }
 .logindiv{
-    margin: 0 auto;
-    display: block;
-    width: 500px;
+    margin: 40px auto;
+    width: 50%;
 }
 
 /* meetup */
-
-/* meetupquestions and answers div */
-.currentmeetupsQC{
-    justify-content: center;
-    width: 70%;
-    display: grid;
-    margin: 0 auto;
-}
-.meetupcontennt h3, .currentmeetupsQCdiv p{
+.meetupnav{
+    width: 80%;
+    margin: 20px auto;
+} 
+.meetupnav li{
     display: inline;
-    font-weight: 600;
-}
-.meetupcontennt h1{
-    font-weight: 800;
-}
-.currentmeetupsQCdiv p, .currentmeetupsQCdiv span{
-    padding: 0;
-    margin: 0;
-}
-#QtnAsked{
+    list-style: none;
+    padding: 0 10px 0 10px;
+} 
+.meetupnav li a:hover{
     color: #f7931e;
+} 
+.active{
+    color: #f7931e;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 25px;
 }
+/* meetupquestions and answers div */
+.Singlemeetupcard{
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    width: 75%; 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+   transition: 0.3s;
+   cursor: pointer;
+   border-radius: 3px;
+   border: 1px solid #ddd;
+ }
+#meetupsQuestion{
+    margin: 0 auto;
+    padding: 10px;
+    width: 75%; 
+   transition: 0.3s;
+   cursor: pointer;
+   display: none;
+ }
+ #meetupQh, #meetupRSVP{
+    color: #5a596a;
+ }
+ #meetupQh:hover, #meetupRSVP:hover{
+    color: #f7931e;
+ }
+#meetupsCommentcard{
+    margin: 10px auto;
+    padding: 10px;
+    width: 75%; 
+   transition: 0.3s;
+   cursor: pointer;
+   border: 1px solid #ddd;
+}
+#meetupsCommentcard img{
+    width: 50px;
+    height: 50px;
+    margin-right:10px; 
+    float: left;
+}
+#meetupsCommentcard h3, #meetupsCommentcard p{
+    display: inline;
+}
+#meetupsCommentcard p{
+    font-weight: 600px;
+    color: #5a596a;
+    font-size: 16px;
+ }
+#meetupsCommentcard p:hover{
+   text-decoration: underline; 
+}
+#meetupscomment{
+    display: none;
+}
+
 .meetupQ{
    margin-top: 5px;
    color: #5a596a;
@@ -609,20 +646,11 @@ form{
 .meetupQj{
     color: #5a596a;
 }
-#meetupQh:hover{
-    color: #f7931e;
- }
+
 #upvotecount, #downvotecount{
 display: inline;
 }
 
-.currentmeetupsQCdiv{
-    display: inline;
-    margin: 5px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-}
 
 #questionfield{
     display: none;
@@ -631,35 +659,11 @@ display: inline;
     padding: 10px;
     border-radius: 5px;
 }
-.askquestions{
-    margin: 5px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-}
+
 .askQuesdiv{
     display: flex;
 }
-.askQuesAvt{
-    
-}
-.askQuesUsr{
-    
-}
-.askQuesCnt{
-    display: block;
-    width: 80%;
-    margin-left: 50px;
-}
-.qw1{
-    font-weight: 600px
-}
-.qw2{
-    font-weight: 700px
-}
-.qw3{
-    font-weight: 800px
-}
+
 .questionfieldS{
     padding: 5px;
     color: #fff;
@@ -675,118 +679,47 @@ display: inline;
     width: 100%;
 }
 
-.askquestions2{
-    margin-top: 5px;
-}
-.askquestionsinput{
-    width: 70%;
-    padding: 3px;
-    border-radius: 5px;
-}
-.votevotebtn{
-    display: flex;
-    justify-content: center;
-}
-#upvotecount, #downvotecount, #askquestionsbtn{
-    margin: 0 30px;
-    cursor: pointer;
-}
-#votecountUp:hover, #votecountdown:hover, #askquestionsbtn:hover{
+
+#votecountUp:hover{
     color: #f7931e;
 }
 #meetupQh, #meetupRSVP{
     font-size: 20px;
 }
-#votecountUp, #votecountdown, #askquestionsbtn{
-    font-size: 20px;
-}
 #comentfield{
     display: none;
 }
-.askquestionsinputbtn{
-   border-radius: 5px;
-   padding: 5px;
-   border:none;
-   background-color: #f26522;
-   color: #fff; 
-   margin-left: 3px; 
-}
-.askquestionsinputbtn:hover{
-    padding: 5px;
-    color: #fff;
-    background: #f26522;
-    border-radius: 5px;
-    border: none;
-    width: 100px;
-}{
-    background: #f7931e;
-}
-.askquestionsinput2{
-    margin-left: 30px;
-    width: 70%;
-    padding: 3px;
-    border-radius: 5px;
-}
-.askquestionsinputbtn2{
-    border-radius: 5px;
-    padding: 5px;
-    border:none;
-    background-color: #f26522;
-    color: #fff;  
-    margin-left: 3px;
- }
- .askquestionsinputbtn2:hover{
-     background: #f7931e;
- }
-
-.usercardprofile{
-    padding: 10px;
-    background:#f26522;
-    color: #fff;
-    border-radius: 5px;
-    text-align: center;
-}
-.meetupbtn{
-    display: inline-block;
-    font-weight: 400;
-    padding: 10px;
-    border: 1px solid  #f26522;
-    border-radius: 5px;
-    font-size: 15px;
-    font-family: 'Thasadith', sans-serif;
-    font-weight: 700;
-    background:  #f26522;
-    color:  #fff;
-    text-align: center;
-    vertical-align: middle;
-}
-.meetupbtn:hover{
-    background: #f7931e;
-}
 /* allmeetups.html */
+
+.meetupcard{
+   margin: 30px auto 0 auto;
+   padding: 10px;
+   width: 75%; 
+   display: grid;
+   grid-template-columns: 1fr 3fr 1fr;
+   justify-items: center;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.meetupcard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+.meetupcard img, .Singlemeetupcard img{
+    width: 100px;
+    height: 100px;  
+}
+.meetupcardcnt p{
+   display: inline;
+   color: #f7931e;
+   font-size: 18px;
+}
 .mt{
     margin-top: 30px;
 }
-.suggestedcnt{
-    width: 100%;
-    background: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.suggestedcnt:hover{
-    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
-}
-.Sdate p{
-    display: inline;
-}
-.SuggestedMeetupCnt{
-    float: left;
-    width: 80%;
-}
-.SuggestedMeetupCntd p{
-    
-}
+
+
 /* userprofile */
 .statboard{
     float: left;
@@ -806,9 +739,7 @@ display: inline;
     margin:10px;
  }
 .statboard2 li a:hover{
-    border: 1px solid #fff;
-    padding: 5px;
-    border-radius: 5px;
+   color:#d6c9c3;
  }
 
 .statboard2 ul{
@@ -820,17 +751,17 @@ display: inline;
 .statboard2 input{
     float: left;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid  #f26522;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .statboard2 button{
     float: left;
     margin: 10px;
-    padding: 5px;
+    padding: 8px;
     border: 1px solid  #fff;
-    border-radius: 5px;
+    border-radius: 25px;
     background: #f26522;
     color: #fff;
     font-family: 'Thasadith', sans-serif;
@@ -840,28 +771,25 @@ display: inline;
     background: #f7931e;
     color: #fff;
     }
-
 .userprofile{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    justify-content: space-around;
-    
+    width: 65%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
 }
-.questionsasked{
-    flex-basis: 30%;
+.userprofile h1{
+    cursor: pointer;
 }
-.questionscomment{
-    flex-basis: 30%;
+.userprofile h1:hover{
+    color: #f7931e;
 }
-.trendingquestions{
-    flex-basis: 30%;
-}
-.questionsaskedcount{
-    background: #fff;
-    padding: 5px;
 
+/* meetupcomments.html */
+#meetupsCommentcard h4{
+    font-size: 12px;
+    font-weight: 200px;
+    color: #5a596a;
 }
 /* admin */
 .adimindminlogin{
@@ -959,18 +887,16 @@ article{
     float: right;
     padding: 20px;
 }
-.adminnotif, .yourmeetupsdiv{
-    background-color: #f7931e;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
+.headtextp{
+    font-size: 30px;
+    box-shadow: 0 2px 10px 0 rgba(33, 43, 54, 0.2), 0 5px 30px 0 rgba(33, 43, 54, 0.08);
     border-radius: 5px;
 }
-.adminnotif:hover, .yourmeetupsdiv:hover{
-    background-color: #f26522;
+.headtext{
+    margin: 30px 135px;
 }
-.adminnotif h1, .yourmeetupsdiv h1{
-    text-align: center;
-    color: #fff;
+.headtext p{
+    display: inline;
 }
 
 aside ul{
@@ -1174,49 +1100,46 @@ border-radius: 5px;
         padding: 30px;
         margin: 50px auto;
     }
-    .signup{
-        display: grid;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-    }
     .divsignup2{
         padding: 20px;
         background: #f7931e;
         color: #fff;
-        margin-top: 50px;
+        min-width: 100%;
+        margin-top: 20px;
         align-self: center;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
     }
     .forminput{
-        width: 100%;
-        height: 25px;
-        padding: 5px;
-        margin: 5px;
-        margin-bottom: 10px;
+        min-width: 100%;
         font-size: 15px;
+        margin: 5px 0;
+        padding: 5px 15px;
         font-weight: 700;
         line-height: 24px;
         font-family: 'Thasadith', sans-serif;
         color: #5a596a;
-        border-radius: 5px;
+        border-radius: 25px;
         border: none;
     }
-    .forminputname{
-        width:100%;
-        height: 25px;
-        padding: 5px;
-        margin: 5px;
-        margin-bottom: 10px;
+    .formsubmit{
+        min-width: 100%;
         font-size: 15px;
+        margin: 5px 0;
         font-weight: 700;
         line-height: 24px;
         font-family: 'Thasadith', sans-serif;
-        color: #5a596a;
-        border-radius: 5px;
+        border-radius: 25px;
         border: none;
+    }
+    .logindiv{
+        margin: 50px auto;
+        display: block;
+        min-width: 80%;
+    }
+    .signup{
+        min-width: 100%;
     }
 
 }
@@ -1227,48 +1150,37 @@ border-radius: 5px;
         padding: 30px;
         margin: 50px auto;
     }
-    .signup{
-        display: grid;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-    }
     .divsignup2{
-        padding: 20px;
+        padding: 10px;
         background: #f7931e;
         color: #fff;
-        margin-top: 50px;
+        min-width: 100%;
+        margin-top: 10px;
         align-self: center;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.2), 0 31px 41px 0 rgba(33, 43, 54, 0.08);
     }
     .forminput{
-        width: 100%;
-        height: 25px;
-        padding: 5px;
-        margin: 5px;
-        margin-bottom: 10px;
+        min-width: 100%;
         font-size: 15px;
+        margin: 5px 0;
+        padding: 5px 15px;
         font-weight: 700;
         line-height: 24px;
         font-family: 'Thasadith', sans-serif;
         color: #5a596a;
-        border-radius: 5px;
+        border-radius: 25px;
         border: none;
     }
-    .forminputname{
-        width:100%;
-        height: 25px;
-        padding: 5px;
-        margin: 5px;
-        margin-bottom: 10px;
+    .formsubmit{
+        min-width: 100%;
         font-size: 15px;
+        margin: 5px 0;
         font-weight: 700;
         line-height: 24px;
         font-family: 'Thasadith', sans-serif;
-        color: #5a596a;
-        border-radius: 5px;
+        border-radius: 25px;
         border: none;
     }
 
@@ -1325,23 +1237,7 @@ border-radius: 5px;
         margin: 5px;
         
     }
-    /* signup */
-    .signup{
-        display: block;
-    }
-    /* loginbox */
-    .Loginbox{
-        margin-top: 50px;
-        padding: 20px;
-        width: 50%; 
-           
-        margin-left: 0px;
-        margin-right: 0px;
-       
-        background: #fff;
-        box-shadow: 5px 5px 5px #81A4CD;
-        margin-bottom: 10px;
-    }
+
 }
 
 
@@ -1409,6 +1305,8 @@ border-radius: 5px;
     }
     .divsignup2{
         display: block;
+        min-width: 100%;
+        margin-top: 10px;
     }
     .signup{
         display: block;
@@ -1426,23 +1324,31 @@ border-radius: 5px;
         margin-bottom: 20px;
         font-size: 25px;
         font-weight: 100;
-        line-height: 35px;
+        line-height: 30px;
         font-family: 'Thasadith', sans-serif;
         color: #f26522; 
     }
-    .forminputname{
-        min-width: 97%;
-        min-height: 100%;
-    }
     .forminput{
-        min-width: 97%;
-        min-height: 100%;
+        min-width: 100%;
+        font-size: 15px;
+        margin: 5px 0;
+        padding: 5px 15px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color: #5a596a;
+        border-radius: 25px;
+        border: none;
     }
     .formsubmit{
-        min-width: 97%;
-        min-height: 100%;
-        margin: 0;
-        padding: 0;
+        min-width: 100%;
+        font-size: 15px;
+        margin: 5px 0;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: 'Thasadith', sans-serif;
+        border-radius: 25px;
+        border: none;
     }
     .container3{
         width: 100%;
@@ -1544,6 +1450,36 @@ border-radius: 5px;
        text-align: center;
        margin: 0 auto;
    }
+   .meetupcard{
+    margin: 30px auto;
+    padding: 10px;
+    width: 100%; 
+    display: block;  
+ }
+ .meetupcard img{
+     width: 60px;
+     height: 60px;  
+ }
+ .meetupcardcnt{
+    
+ }
+ .meetupcardcnt h1, .meetupcardcnt h3 .meetupcardrsvp p{
+     font-size: 18px;
+ }
+ .meetupcardcnt p{
+    display: inline;
+    color: #f7931e;
+    font-size: 15px;
+ }
+ .meetupcardrsvp{
+     display: block;
+ }
+ .headtext{
+    margin: 20px 0;
+ }
+ .headtextp{
+    font-size: 20px;
+}
 
 } 
 
@@ -1667,8 +1603,35 @@ border-radius: 5px;
        text-align: center;
        margin: 0 auto;
    }
+   
 } 
-
+@media only screen and (max-width: 768px) {
+    .meetupcard{
+        margin: 30px auto;
+        padding: 10px;
+        width: 90%; 
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+     }
+     .meetupcard img{
+         width: 80px;
+         height: 80px;  
+     }
+     .meetupcardcnt{
+        
+     }
+     .meetupcardcnt h1, .meetupcardcnt h3 .meetupcardrsvp p{
+         font-size: 20px;
+     }
+     .meetupcardcnt p{
+        display: inline;
+        color: #f7931e;
+        font-size: 17px;
+     }
+     .meetupcardrsvp{
+         display: block;
+     }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     .userdashboard{
