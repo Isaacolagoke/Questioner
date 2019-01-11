@@ -1,6 +1,10 @@
 {
   "name": "questioner",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "A questioner API",
+  "main": "server.js",
+=======
   "description": "This Project (Questioner) is part of the Requirement to becoming an Andella Fellow.",
   "main": "server.js",
   "scripts": {
@@ -14,21 +18,36 @@
     "type": "git",
     "url": "git+https://github.com/profhyzik/Questioner.git"
   },
+>>>>>>> 5c9e458c2eba6a57e464e6f9d749e1b056cb07fb
   "author": "Isaac Olagoke",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/profhyzik/Questioner/issues"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0"
   },
-  "homepage": "https://github.com/profhyzik/Questioner#readme",
   "devDependencies": {
+<<<<<<< HEAD
+=======
     "eslint": "^5.11.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "nodemon": "^1.18.9",
+>>>>>>> 5c9e458c2eba6a57e464e6f9d749e1b056cb07fb
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "mocha": "^2.4.5"
   },
+<<<<<<< HEAD
+  "scripts": {
+    "postinstall": "node server.js",
+    "start": "node server.js",
+    "test": "mocha --timeout 10000",
+    "coverage": "`npm bin`/istanbul cover ./test/runner.js",
+    "coveralls": "npm run-script coverage && node bin/coveralls.js < coverage/lcov.info"
+=======
   "dependencies": {
     "body-parser": "^1.15.1",
     "config": "^1.20.1",
@@ -40,5 +59,6 @@
     "istanbul": "~0.2.4",
     "mocha": "^5.2.0",
     "sinon": "~1.8.0"
+>>>>>>> 5c9e458c2eba6a57e464e6f9d749e1b056cb07fb
   }
 }
