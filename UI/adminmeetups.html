@@ -22,7 +22,8 @@
         <h1>Dashboard</h1>
     </div>
     <ul>
-        <li><a href="admindashboard.html"> <span><i class="far fa-comment-dots fa-lg"></i></span> Your Profile</a></li> 
+        <li><a href="admindashboard.html"> <span><i class="far fa-comment-dots fa-lg"></i></span> Your Profile</a></li>
+        <li> <span><i class="far fa-comment-dots fa-lg"></i></span> <a href="adminmeetups.html" class="active"> Your Meetups</a></li>  
         <li><a href="admincreatemeetup.html"><span><i class="fas fa-plus-circle fa-lg"></i></span> Create Meetups</a></li>
         <li><a href=""><span><i class="far fa-question-circle fa-lg"></i></span> Questions</a></li>
         <li><a href=""><span><i class="fas fa-angle-double-up fa-lg"></i></span> Trending</a></li>
@@ -31,150 +32,102 @@
 
 </aside>
 <article>
-<div class="meetmeetup">
-    <div class="yourmeetups">
-                        <div class="yourmeetupsdiv">
-                            <h1>Your Meetups</h1>
-                        </div>
-                
-                <div class="meetupdiv">
-                            <div class="meetuptime">
-                            <h3 id="meetupdate">Oct 8 2018</h3>
-                            <h3 id="meetuptime">10:00am</h3>
-                            </div>
-                            <div class="meetupcontennt">
-                                    <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                    <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                    <p>11 Enthusiasts going</p>   
-                            </div>
-                            <div class="meetupvote">
-                                <div class="upvotecount">
-                                    <span><a href="" id="downvotecount">20</a>  <i class="fas fa-angle-double-up fa-lg"></i></span>
-                                </div>
-                                <br>
-                                <div class="downvotecount">
-                                    <span><a href="" id="upvotecount">20</a>  <i class="fas fa-angle-double-down fa-lg"></i></span>
-                                </div>
-                            </div>
-                            <div class="deletebox">
-                                <span><i class="fas fa-trash-alt"></i></span>
-                            </div>
+<div id="adminmeetupcontainer">
+        <div class="adminmeetupcard">
+                <img src="./image/blockchain.jpg" alt="Avatar">
+                <div class="meetupcardcnt">
+                    <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
+                    <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
+                    <p>Feburary 5, 2018</p> <p>20:00</p>
                 </div>
-
-                <!--  -->
-
-                <div class="meetupdiv">
-                        <div class="meetuptime">
-                        <h3 id="meetupdate">Oct 8 2018</h3>
-                        <h3 id="meetuptime">10:00am</h3>
-                        </div>
-                        <div class="meetupcontennt">
-                                <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                <p>11 Enthusiasts going</p>   
-                        </div>
-                        <div class="meetupvote">
-                            <div class="upvotecount">
-                                <span><a href="" id="downvotecount">20</a>  <i class="fas fa-angle-double-up fa-lg"></i></span>
-                            </div>
-                            <br>
-                            <div class="downvotecount">
-                                <span><a href="" id="upvotecount">20</a>  <i class="fas fa-angle-double-down fa-lg"></i></span>
-                            </div>
-                        </div>
-                        <div class="deletebox">
-                            <span><i class="fas fa-trash-alt"></i></span>
-                        </div>
+                <div class="meetupcardrsvp">
+                        <P id="meetupRSVP" onclick="location.href='meetup.html'"> RSVP ? <i class="far fa-check-circle"></i></P>
+                        <p id="QtnAsked">Question Asked: <span id="QtnAsked">102</span></p>
+                        <p>11 Enthusiasts going</p> 
                 </div>
-
-                <!--  -->
-
-                <div class="meetupdiv">
-                        <div class="meetuptime">
-                        <h3 id="meetupdate">Oct 8 2018</h3>
-                        <h3 id="meetuptime">10:00am</h3>
-                        </div>
-                        <div class="meetupcontennt">
-                                <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                <p>11 Enthusiasts going</p>   
-                        </div>
-                        <div class="meetupvote">
-                            <div class="upvotecount">
-                                <span><a href="" id="downvotecount">20</a>  <i class="fas fa-angle-double-up fa-lg"></i></span>
-                            </div>
-                            <br>
-                            <div class="downvotecount">
-                                <span><a href="" id="upvotecount">20</a>  <i class="fas fa-angle-double-down fa-lg"></i></span>
-                            </div>
-                        </div>
-                        <div class="deletebox">
-                            <span><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                </div>
-
-              
-
-
-</div>
-
-
-<div class="allmeetups">
-        <div class="yourmeetupsdiv">
-                <h1>All Meetups</h1>
+                <!--  -->  
+        </div>  <!-- adminmeetupcard end --> 
+        <div class="adminmeetupfeed">
+            <div id="adminmeetupfeedUV">
+                    <i class="fas fa-id-card-alt fa-lg"></i> <p>Meetup ID:</p>  <a href="" id="downvotecount">123</a> 
             </div>
-        <div class="allmeetupmeet">
-                <div class="allmeetupsdiv">
-                    <div class="allmeetupsdivdate">
-                        <h3 id="meetupdate">Oct 8 2018</h3>
-                        <h3 id="meetuptime">10:00am</h3>
-                    </div>
-                    <div class="allmeetupsdivdesc">
-                            <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                            <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                            <p>11 Enthusiasts going</p>  
-                    </div>
-                </div>
+            <div id="adminmeetupfeedUV">
+                <i class="fas fa-thumbs-up fa-lg"></i> <p>Upvotes:</p>  <a href="" id="downvotecount">20</a>  
+            </div>
+            <div id="adminmeetupfeedDV">
+                <i class="fas fa-thumbs-down fa-lg"></i> <p>Downvotes</p> <a href="" id="upvotecount">20</a>  
+            </div> 
+            <div id="adminmeetupfeedDL" onclick="deletemeetup()">
+                <p>Delete Meetup</p> <i class="fas fa-trash-alt fa-lg" ></i>
+            </div> 
+        </div> <!--  adminmeetupfeed  ends-->
 
-                <div class="allmeetupsdiv">
-                        <div class="allmeetupsdivdate">
-                            <h3 id="meetupdate">Oct 8 2018</h3>
-                            <h3 id="meetuptime">10:00am</h3>
-                        </div>
-                        <div class="allmeetupsdivdesc">
-                                <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                <p>11 Enthusiasts going</p>  
-                        </div>
-                    </div>
-
-
-                    <div class="allmeetupsdiv">
-                            <div class="allmeetupsdivdate">
-                                <h3 id="meetupdate">Oct 8 2018</h3>
-                                <h3 id="meetuptime">10:00am</h3>
-                            </div>
-                            <div class="allmeetupsdivdesc">
-                                    <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                    <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                    <p>11 Enthusiasts going</p>  
-                            </div>
-                        </div>
-
-                        <div class="allmeetupsdiv">
-                                <div class="allmeetupsdivdate">
-                                    <h3 id="meetupdate">Oct 8 2018</h3>
-                                    <h3 id="meetuptime">10:00am</h3>
-                                </div>
-                                <div class="allmeetupsdivdesc">
-                                        <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
-                                        <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
-                                        <p>11 Enthusiasts going</p>  
-                                </div>
-                            </div>
-        </div>
 </div>
 
+<!--  -->
+<div id="adminmeetupcontainer">
+        <div class="adminmeetupcard">
+                <img src="./image/blockchain.jpg" alt="Avatar">
+                <div class="meetupcardcnt">
+                    <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
+                    <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
+                    <p>Feburary 5, 2018</p> <p>20:00</p>
+                </div>
+                <div class="meetupcardrsvp">
+                        <P id="meetupRSVP" onclick="location.href='meetup.html'"> RSVP ? <i class="far fa-check-circle"></i></P>
+                        <p id="QtnAsked">Question Asked: <span id="QtnAsked">102</span></p>
+                        <p>11 Enthusiasts going</p> 
+                </div>
+                <!--  -->  
+        </div>  <!-- adminmeetupcard end --> 
+        <div class="adminmeetupfeed">
+            <div id="adminmeetupfeedUV">
+                    <i class="fas fa-id-card-alt fa-lg"></i> <p>Meetup ID:</p>  <a href="" id="downvotecount">123</a> 
+            </div>
+            <div id="adminmeetupfeedUV">
+                <i class="fas fa-thumbs-up fa-lg"></i> <p>Upvotes:</p>  <a href="" id="downvotecount">20</a>  
+            </div>
+            <div id="adminmeetupfeedDV">
+                <i class="fas fa-thumbs-down fa-lg"></i> <p>Downvotes</p> <a href="" id="upvotecount">20</a>  
+            </div> 
+            <div id="adminmeetupfeedDL" onclick="deletemeetup()">
+                <p>Delete Meetup</p> <i class="fas fa-trash-alt fa-lg" ></i>
+            </div> 
+        </div> <!--  adminmeetupfeed  ends-->
+
+</div>
+
+<!--  -->
+
+<div id="adminmeetupcontainer">
+        <div class="adminmeetupcard">
+                <img src="./image/blockchain.jpg" alt="Avatar">
+                <div class="meetupcardcnt">
+                    <h1>BLOCKCHAIN TECHNOLOGY INITIATIVE</h1>
+                    <h3>Ian Balina Crypto-World Tour, Lagos 2018</h3>
+                    <p>Feburary 5, 2018</p> <p>20:00</p>
+                </div>
+                <div class="meetupcardrsvp">
+                        <P id="meetupRSVP" onclick="location.href='meetup.html'"> RSVP ? <i class="far fa-check-circle"></i></P>
+                        <p id="QtnAsked">Question Asked: <span id="QtnAsked">102</span></p>
+                        <p>11 Enthusiasts going</p> 
+                </div>
+                <!--  -->  
+        </div>  <!-- adminmeetupcard end --> 
+        <div class="adminmeetupfeed">
+            <div id="adminmeetupfeedUV">
+                    <i class="fas fa-id-card-alt fa-lg"></i> <p>Meetup ID:</p>  <a href="" id="downvotecount">123</a> 
+            </div>
+            <div id="adminmeetupfeedUV">
+                <i class="fas fa-thumbs-up fa-lg"></i> <p>Upvotes:</p>  <a href="" id="downvotecount">20</a>  
+            </div>
+            <div id="adminmeetupfeedDV">
+                <i class="fas fa-thumbs-down fa-lg"></i> <p>Downvotes</p> <a href="" id="upvotecount">20</a>  
+            </div> 
+            <div id="adminmeetupfeedDL" onclick="deletemeetup()">
+                <p>Delete Meetup</p> <i class="fas fa-trash-alt fa-lg" ></i>
+            </div> 
+        </div> <!--  adminmeetupfeed  ends-->
 
 </div>
 </article>

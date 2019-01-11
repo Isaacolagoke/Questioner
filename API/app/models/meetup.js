@@ -1,4 +1,7 @@
 //Meetup schema definition
+
+
+
 let MeetupSchema = {
   id: 1,
   createdOn: new Date(),
