@@ -22,7 +22,7 @@
         <h1>Dashboard</h1>
     </div>
     <ul>
-        <li> <span><i class="far fa-user-circle fa-lg"></i></span> <a href="admindashboard.html"> Your Profile</a></li> 
+        <li> <span><i class="far fa-user-circle fa-lg"></i></span> <a href="admindashboard.html" class="active"> Your Profile</a></li> 
         <li> <span><i class="far fa-comment-dots fa-lg"></i></span> <a href="adminmeetups.html"> Your Meetups</a></li> 
         <li> <span><i class="fas fa-plus-circle fa-lg"></i></span> <a href="admincreatemeetup.html"> Create Meetups</a></li>
         <li> <span><i class="fas fa-angle-double-up fa-lg"></i></span> <a href=""> Trending</a></li>
@@ -31,32 +31,35 @@
 
 </aside>
 <article>
-<div class="admindashboardinterface">
-            <div class="meetups">
-                    <div class="adminnotif">
-                            <h1>Meetups</h1>
-                        </div>
+
+            <div class="admeetups">
+                    <div class="userprofile">
+                            <h1 onclick="adminmeetups.html">Your Meetup (3)</h1>
+                            <hr>
+                    </div>
+            </div>
+            <div class="adusers">
+                    <div class="userprofile">
+                            <h1 onclick="adminmeetups.html">RSVP (3)</h1>
+                            <hr>
+                    </div>
                 
             </div>
-            <div class="users">
-                    <div class="adminnotif">
-                            <h1>Users</h1>
-                        </div>
+            <div class="adquestions">
+                    <div class="userprofile">
+                            <h1 onclick="adminmeetups.html">Questions Asked (3)</h1>
+                            <hr>
+                    </div>
                 
             </div>
-            <div class="questions">
-                    <div class="adminnotif">
-                            <h1>Questions</h1>
-                        </div>
+            <div class="adcomment">
+                    <div class="userprofile">
+                            <h1 onclick="adminmeetups.html">Comments on Questions (3)</h1>
+                            <hr>
+                    </div>
                 
             </div>
-            <div class="comment">
-                    <div class="adminnotif">
-                            <h1>Comment</h1>
-                        </div>
-                
-            </div>
-</div>
+
 </article>
 </body>
 </html>
